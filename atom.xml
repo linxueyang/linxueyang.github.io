@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>lxyblog</title>
+  
+  <subtitle>清明时节雨纷纷</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.linxueyang.cn/"/>
+  <updated>2020-05-26T01:49:02.262Z</updated>
+  <id>http://www.linxueyang.cn/</id>
+  
+  <author>
+    <name>york lin</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sql</title>
+    <link href="http://www.linxueyang.cn/2020/04/17/sql/"/>
+    <id>http://www.linxueyang.cn/2020/04/17/sql/</id>
+    <published>2020-04-17T13:48:22.000Z</published>
+    <updated>2020-05-26T01:49:02.262Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;in 查询结果排序&lt;pre class=&quot; language-sql&quot;&gt;&lt;code class=&quot;language-sql&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;token
+        
+      
+    
+    </summary>
+    
+    
+      <category term="sql" scheme="http://www.linxueyang.cn/categories/sql/"/>
+    
+    
+      <category term="sql" scheme="http://www.linxueyang.cn/tags/sql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>day20200417</title>
+    <link href="http://www.linxueyang.cn/2020/04/17/day417/"/>
+    <id>http://www.linxueyang.cn/2020/04/17/day417/</id>
+    <published>2020-04-17T13:48:03.000Z</published>
+    <updated>2020-05-26T01:49:02.258Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/categories/diary/"/>
+    
+    
+      <category term="share" scheme="http://www.linxueyang.cn/tags/share/"/>
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/tags/diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>day20200414</title>
+    <link href="http://www.linxueyang.cn/2020/04/14/day414/"/>
+    <id>http://www.linxueyang.cn/2020/04/14/day414/</id>
+    <published>2020-04-14T16:20:03.000Z</published>
+    <updated>2020-05-26T01:49:02.258Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;工作&quot;&gt;&lt;a href=&quot;#工作&quot; class=&quot;headerlink&quot; title=&quot;工作&quot;&gt;&lt;/a&gt;工作&lt;/h1&gt;&lt;pre class=&quot; language-日常&quot;&gt;&lt;code class=&quot;language-日常&quot;&gt;   
+        
+      
+    
+    </summary>
+    
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/categories/diary/"/>
+    
+    
+      <category term="share" scheme="http://www.linxueyang.cn/tags/share/"/>
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/tags/diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>bpm</title>
+    <link href="http://www.linxueyang.cn/2020/04/09/bpm/"/>
+    <id>http://www.linxueyang.cn/2020/04/09/bpm/</id>
+    <published>2020-04-09T17:47:07.000Z</published>
+    <updated>2020-05-26T01:49:01.386Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;隐藏表单上面按钮 &lt;/p&gt;
+&lt;pre class=&quot; language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;window&lt;span class=&quot;token
+        
+      
+    
+    </summary>
+    
+    
+      <category term="bpm" scheme="http://www.linxueyang.cn/categories/bpm/"/>
+    
+    
+      <category term="bpm" scheme="http://www.linxueyang.cn/tags/bpm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue</title>
+    <link href="http://www.linxueyang.cn/2020/04/09/vue/"/>
+    <id>http://www.linxueyang.cn/2020/04/09/vue/</id>
+    <published>2020-04-09T15:23:05.000Z</published>
+    <updated>2020-05-26T01:49:02.262Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;当页引用vue时注意，IE的不兼容性es6，如果data(){}需写成 data:function()&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;加载闪屏&lt;/p&gt;
+&lt;pre class=&quot; language-js&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+    
+      <category term="vue" scheme="http://www.linxueyang.cn/categories/vue/"/>
+    
+    
+      <category term="vue" scheme="http://www.linxueyang.cn/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>day20200409</title>
+    <link href="http://www.linxueyang.cn/2020/04/09/day409/"/>
+    <id>http://www.linxueyang.cn/2020/04/09/day409/</id>
+    <published>2020-04-09T09:16:03.000Z</published>
+    <updated>2020-05-26T01:49:02.258Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;工作&quot;&gt;&lt;a href=&quot;#工作&quot; class=&quot;headerlink&quot; title=&quot;工作&quot;&gt;&lt;/a&gt;工作&lt;/h1&gt;&lt;pre class=&quot; language-日常&quot;&gt;&lt;code class=&quot;language-日常&quot;&gt;    
+        
+      
+    
+    </summary>
+    
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/categories/diary/"/>
+    
+    
+      <category term="share" scheme="http://www.linxueyang.cn/tags/share/"/>
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/tags/diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>day20200407</title>
+    <link href="http://www.linxueyang.cn/2020/04/07/day407/"/>
+    <id>http://www.linxueyang.cn/2020/04/07/day407/</id>
+    <published>2020-04-07T12:39:45.000Z</published>
+    <updated>2020-05-26T01:49:02.258Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;工作&quot;&gt;&lt;a href=&quot;#工作&quot; class=&quot;headerlink&quot; title=&quot;工作&quot;&gt;&lt;/a&gt;工作&lt;/h1&gt;&lt;pre class=&quot; language-日常&quot;&gt;&lt;code class=&quot;language-日常&quot;&gt;  
+        
+      
+    
+    </summary>
+    
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/categories/diary/"/>
+    
+    
+      <category term="share" scheme="http://www.linxueyang.cn/tags/share/"/>
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/tags/diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>BPM版本库</title>
+    <link href="http://www.linxueyang.cn/2020/04/03/bpmversion/"/>
+    <id>http://www.linxueyang.cn/2020/04/03/bpmversion/</id>
+    <published>2020-04-03T14:31:56.000Z</published>
+    <updated>2020-05-26T01:49:01.942Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;6-70b&quot;&gt;&lt;a href=&quot;#6-70b&quot; class=&quot;headerlink&quot; title=&quot;6.70b&quot;&gt;&lt;/a&gt;6.70b&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="bpm" scheme="http://www.linxueyang.cn/categories/bpm/"/>
+    
+    
+      <category term="BPM" scheme="http://www.linxueyang.cn/tags/BPM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>day20200403</title>
+    <link href="http://www.linxueyang.cn/2020/04/03/day403/"/>
+    <id>http://www.linxueyang.cn/2020/04/03/day403/</id>
+    <published>2020-04-03T11:49:05.000Z</published>
+    <updated>2020-05-26T01:49:02.258Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;工作&quot;&gt;&lt;a href=&quot;#工作&quot; class=&quot;headerlink&quot; title=&quot;工作&quot;&gt;&lt;/a&gt;工作&lt;/h1&gt;&lt;pre class=&quot; language-日常&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/categories/diary/"/>
+    
+    
+      <category term="share" scheme="http://www.linxueyang.cn/tags/share/"/>
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/tags/diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>day20200402</title>
+    <link href="http://www.linxueyang.cn/2020/04/02/day402/"/>
+    <id>http://www.linxueyang.cn/2020/04/02/day402/</id>
+    <published>2020-04-02T08:54:36.000Z</published>
+    <updated>2020-05-26T01:49:02.258Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;工作&quot;&gt;&lt;a href=&quot;#工作&quot; class=&quot;headerlink&quot; title=&quot;工作&quot;&gt;&lt;/a&gt;工作&lt;/h1&gt;&lt;pre class=&quot; language-日常&quot;&gt;&lt;code class=&quot;language-日常&quot;&gt;    
+        
+      
+    
+    </summary>
+    
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/categories/diary/"/>
+    
+    
+      <category term="share" scheme="http://www.linxueyang.cn/tags/share/"/>
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/tags/diary/"/>
+    
+      <category term="git" scheme="http://www.linxueyang.cn/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>day20200401</title>
+    <link href="http://www.linxueyang.cn/2020/04/01/day401/"/>
+    <id>http://www.linxueyang.cn/2020/04/01/day401/</id>
+    <published>2020-04-01T11:20:13.000Z</published>
+    <updated>2020-05-26T01:49:02.258Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;工作&quot;&gt;&lt;a href=&quot;#工作&quot; class=&quot;headerlink&quot; title=&quot;工作&quot;&gt;&lt;/a&gt;工作&lt;/h1&gt;&lt;pre class=&quot; language-日常&quot;&gt;&lt;code class=&quot;language-日常&quot;&gt;    
+        
+      
+    
+    </summary>
+    
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/categories/diary/"/>
+    
+    
+      <category term="share" scheme="http://www.linxueyang.cn/tags/share/"/>
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/tags/diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>blogupdatelog</title>
+    <link href="http://www.linxueyang.cn/2020/03/31/blogupdatelog/"/>
+    <id>http://www.linxueyang.cn/2020/03/31/blogupdatelog/</id>
+    <published>2020-03-31T16:11:53.000Z</published>
+    <updated>2020-05-26T01:49:01.386Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;v1-0-3&quot;&gt;&lt;a href=&quot;#v1-0-3&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="http://www.linxueyang.cn/categories/hexo/"/>
+    
+    
+      <category term="html" scheme="http://www.linxueyang.cn/tags/html/"/>
+    
+      <category term="github" scheme="http://www.linxueyang.cn/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>day20200331</title>
+    <link href="http://www.linxueyang.cn/2020/03/31/day331/"/>
+    <id>http://www.linxueyang.cn/2020/03/31/day331/</id>
+    <published>2020-03-31T09:51:38.000Z</published>
+    <updated>2020-05-26T01:49:02.258Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;工作&quot;&gt;&lt;a href=&quot;#工作&quot; class=&quot;headerlink&quot; title=&quot;工作&quot;&gt;&lt;/a&gt;工作&lt;/h1&gt;&lt;pre class=&quot; language-日常&quot;&gt;&lt;code class=&quot;language-日常&quot;&gt;     1.完成博客自动化部署
+        
+      
+    
+    </summary>
+    
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/categories/diary/"/>
+    
+    
+      <category term="BPM" scheme="http://www.linxueyang.cn/tags/BPM/"/>
+    
+      <category term="share" scheme="http://www.linxueyang.cn/tags/share/"/>
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/tags/diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>day20200330</title>
+    <link href="http://www.linxueyang.cn/2020/03/30/day330/"/>
+    <id>http://www.linxueyang.cn/2020/03/30/day330/</id>
+    <published>2020-03-30T16:24:29.000Z</published>
+    <updated>2020-05-26T01:49:02.258Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;工作&quot;&gt;&lt;a href=&quot;#工作&quot; class=&quot;headerlink&quot; title=&quot;工作&quot;&gt;&lt;/a&gt;工作&lt;/h1&gt;&lt;pre class=&quot; language-日常&quot;&gt;&lt;code class=&quot;language-日常&quot;&gt;    
+        
+      
+    
+    </summary>
+    
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/categories/diary/"/>
+    
+    
+      <category term="github" scheme="http://www.linxueyang.cn/tags/github/"/>
+    
+      <category term="share" scheme="http://www.linxueyang.cn/tags/share/"/>
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/tags/diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>七牛云CDN 配置</title>
+    <link href="http://www.linxueyang.cn/2020/03/27/qiniucdn/"/>
+    <id>http://www.linxueyang.cn/2020/03/27/qiniucdn/</id>
+    <published>2020-03-27T13:55:51.000Z</published>
+    <updated>2020-05-26T01:49:02.258Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;CDN-配置&quot;&gt;&lt;a href=&quot;#CDN-配置&quot; class=&quot;headerlink&quot; title=&quot;CDN 配置&quot;&gt;&lt;/a&gt;CDN 配置&lt;/h1&gt;&lt;p&gt;&lt;code&gt;因为博客空间有限，所以使用七牛云存储博客中的附件&lt;/code&gt;&lt;/p&gt;
+&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="CDN" scheme="http://www.linxueyang.cn/tags/CDN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>day20200327</title>
+    <link href="http://www.linxueyang.cn/2020/03/27/day327/"/>
+    <id>http://www.linxueyang.cn/2020/03/27/day327/</id>
+    <published>2020-03-27T11:49:27.000Z</published>
+    <updated>2020-05-26T01:49:02.258Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;工作&quot;&gt;&lt;a href=&quot;#工作&quot; class=&quot;headerlink&quot; title=&quot;工作&quot;&gt;&lt;/a&gt;工作&lt;/h1&gt;&lt;pre class=&quot; language-日常&quot;&gt;&lt;code class=&quot;language-日常&quot;&gt;    
+        
+      
+    
+    </summary>
+    
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/categories/diary/"/>
+    
+    
+      <category term="BPM" scheme="http://www.linxueyang.cn/tags/BPM/"/>
+    
+      <category term="share" scheme="http://www.linxueyang.cn/tags/share/"/>
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/tags/diary/"/>
+    
+      <category term="android" scheme="http://www.linxueyang.cn/tags/android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>day20200326</title>
+    <link href="http://www.linxueyang.cn/2020/03/26/day326/"/>
+    <id>http://www.linxueyang.cn/2020/03/26/day326/</id>
+    <published>2020-03-26T13:57:20.000Z</published>
+    <updated>2020-05-26T01:49:02.258Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;工作&quot;&gt;&lt;a href=&quot;#工作&quot; class=&quot;headerlink&quot; title=&quot;工作&quot;&gt;&lt;/a&gt;工作&lt;/h1&gt;&lt;pre class=&quot; language-日常&quot;&gt;&lt;code class=&quot;language-日常&quot;&gt;     1.更新bpmwebapp
+        
+      
+    
+    </summary>
+    
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/categories/diary/"/>
+    
+    
+      <category term="BPM" scheme="http://www.linxueyang.cn/tags/BPM/"/>
+    
+      <category term="share" scheme="http://www.linxueyang.cn/tags/share/"/>
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/tags/diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>BPM WEBAPP 版本说明</title>
+    <link href="http://www.linxueyang.cn/2020/03/26/bpmwebappversion/"/>
+    <id>http://www.linxueyang.cn/2020/03/26/bpmwebappversion/</id>
+    <published>2020-03-26T11:41:37.000Z</published>
+    <updated>2020-05-26T01:49:01.942Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;v1-0-4&quot;&gt;&lt;a href=&quot;#v1-0-4&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="bpm" scheme="http://www.linxueyang.cn/categories/bpm/"/>
+    
+    
+      <category term="html" scheme="http://www.linxueyang.cn/tags/html/"/>
+    
+      <category term="vue" scheme="http://www.linxueyang.cn/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>day20200325</title>
+    <link href="http://www.linxueyang.cn/2020/03/25/day325/"/>
+    <id>http://www.linxueyang.cn/2020/03/25/day325/</id>
+    <published>2020-03-25T15:17:21.000Z</published>
+    <updated>2020-05-26T01:49:02.258Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;工作&quot;&gt;&lt;a href=&quot;#工作&quot; class=&quot;headerlink&quot; title=&quot;工作&quot;&gt;&lt;/a&gt;工作&lt;/h1&gt;&lt;pre class=&quot; language-日常&quot;&gt;&lt;code class=&quot;language-日常&quot;&gt;     1.完成webapp
+        
+      
+    
+    </summary>
+    
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/categories/diary/"/>
+    
+    
+      <category term="BPM" scheme="http://www.linxueyang.cn/tags/BPM/"/>
+    
+      <category term="share" scheme="http://www.linxueyang.cn/tags/share/"/>
+    
+      <category term="diary" scheme="http://www.linxueyang.cn/tags/diary/"/>
+    
+      <category term="DataBrowser" scheme="http://www.linxueyang.cn/tags/DataBrowser/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>bpmwebapp</title>
+    <link href="http://www.linxueyang.cn/2020/03/25/bpmapp/"/>
+    <id>http://www.linxueyang.cn/2020/03/25/bpmapp/</id>
+    <published>2020-03-25T11:14:56.000Z</published>
+    <updated>2020-05-26T01:49:01.386Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;img src=&quot;/2020/03/25/bpmapp/image/4.PNG&quot; width=&quot;400&quot; height=&quot;400&quot; alt=&quot;样例效果&quot; align=&quot;center&quot;&gt;
+
+&lt;video width=&quot;100%&quot; height=&quot;320&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="bpm" scheme="http://www.linxueyang.cn/categories/bpm/"/>
+    
+    
+      <category term="html" scheme="http://www.linxueyang.cn/tags/html/"/>
+    
+      <category term="vue" scheme="http://www.linxueyang.cn/tags/vue/"/>
+    
+      <category term=".net" scheme="http://www.linxueyang.cn/tags/net/"/>
+    
+  </entry>
+  
+</feed>

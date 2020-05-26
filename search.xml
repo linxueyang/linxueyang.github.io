@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>sql</title>
+      <link href="/2020/04/17/sql/"/>
+      <url>/2020/04/17/sql/</url>
+      
+        <content type="html"><![CDATA[<ol><li>in 查询结果排序<pre class=" language-sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span>   TFAPP_TEST_BASE  <span class="token keyword">where</span> ID <span class="token operator">in</span><span class="token punctuation">(</span><span class="token number">117</span><span class="token punctuation">,</span><span class="token number">118</span><span class="token punctuation">,</span><span class="token number">116</span><span class="token punctuation">,</span><span class="token number">144</span><span class="token punctuation">)</span>  <span class="token keyword">ORDER</span> <span class="token keyword">BY</span> DECODE<span class="token punctuation">(</span>ID<span class="token punctuation">,</span> <span class="token number">117</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">118</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">116</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">144</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span></code></pre></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> sql </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>day20200417</title>
+      <link href="/2020/04/17/day417/"/>
+      <url>/2020/04/17/day417/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> diary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> share </tag>
+            
+            <tag> diary </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>day20200414</title>
+      <link href="/2020/04/14/day414/"/>
+      <url>/2020/04/14/day414/</url>
+      
+        <content type="html"><![CDATA[<h1 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h1><pre class=" language-日常"><code class="language-日常">    1.完成传化的app接口</code></pre><hr><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>   1.webapp可以判断useragent来实现多语言</p><h1 id="有感"><a href="#有感" class="headerlink" title="有感"></a>有感</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> diary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> share </tag>
+            
+            <tag> diary </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>bpm</title>
+      <link href="/2020/04/09/bpm/"/>
+      <url>/2020/04/09/bpm/</url>
+      
+        <content type="html"><![CDATA[<ol><li><p>隐藏表单上面按钮 </p><pre class=" language-js"><code class="language-js">window<span class="token punctuation">.</span>frameElement<span class="token punctuation">.</span>containerPanel<span class="token punctuation">.</span>ownerCt<span class="token punctuation">.</span>ownerCt<span class="token punctuation">.</span>toolbar<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span>window<span class="token punctuation">.</span>frameElement<span class="token punctuation">.</span>containerPanel<span class="token punctuation">.</span>ownerCt<span class="token punctuation">.</span>ownerCt<span class="token punctuation">.</span>toolbar<span class="token punctuation">.</span>items<span class="token punctuation">.</span>items<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span></code></pre></li><li><p>表单事件</p><pre class=" language-js"><code class="language-js"> agent<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token punctuation">{</span>    beforePost<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>action<span class="token punctuation">,</span> validationGroup<span class="token punctuation">,</span> params<span class="token punctuation">)</span> <span class="token punctuation">{</span>   <span class="token comment" spellcheck="true">//开始节点生效   控件验证前事件</span>            <span class="token keyword">debugger</span><span class="token punctuation">;</span>            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span><span class="token punctuation">,</span>        Post<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>action<span class="token punctuation">,</span> validationGroup<span class="token punctuation">,</span> data<span class="token punctuation">)</span> <span class="token punctuation">{</span>   <span class="token comment" spellcheck="true">//开始节点生效   控件验证后事件</span>            <span class="token keyword">debugger</span><span class="token punctuation">;</span>            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span><span class="token punctuation">,</span>        beforeSubmit<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>action<span class="token punctuation">,</span> validationGroup<span class="token punctuation">,</span> params<span class="token punctuation">)</span> <span class="token punctuation">{</span>   <span class="token comment" spellcheck="true">//所有节点生效   控件验证前事件</span>            <span class="token keyword">debugger</span><span class="token punctuation">;</span>            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span><span class="token punctuation">,</span>        Submit<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>action<span class="token punctuation">,</span> validationGroup<span class="token punctuation">,</span> data<span class="token punctuation">,</span> params<span class="token punctuation">)</span> <span class="token punctuation">{</span>   <span class="token comment" spellcheck="true">//所有节点生效   控件验证后事件</span>            <span class="token keyword">debugger</span><span class="token punctuation">;</span>            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span><span class="token punctuation">,</span>        afterPost<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">//开始节点生效 提交成功后事件</span>            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token number">12312</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span><span class="token punctuation">,</span>        afterSubmit<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">//所有节点生效 提交成功后事件</span>            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token number">12312</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span><span class="token punctuation">,</span>    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></li><li><p>表单加载完后执行</p><pre class=" language-js"><code class="language-js">OnAfterLoad <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></code></pre></li></ol><p> 4.提交时选择下一步审批人</p><pre class=" language-js"><code class="language-js">  agent<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token punctuation">{</span>            beforeSubmit<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">,</span> e<span class="token punctuation">,</span> f<span class="token punctuation">,</span> g<span class="token punctuation">)</span> <span class="token punctuation">{</span>                <span class="token keyword">if</span> <span class="token punctuation">(</span>b <span class="token operator">==</span> <span class="token string">"提交"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>                    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>validator<span class="token punctuation">.</span><span class="token function">submitValidate</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>                        <span class="token keyword">if</span> <span class="token punctuation">(</span>agent<span class="token punctuation">.</span><span class="token function">tryGetChechedEle</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"XTextBox2"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token string">""</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>                            Ext<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token string">'YZSoft.bpm.src.dialogs.SelUsersDlg'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>                                autoShow<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                                fn<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>users<span class="token punctuation">)</span> <span class="token punctuation">{</span>                                    <span class="token keyword">var</span> accounts <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>                                    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> users<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>                                        accounts <span class="token operator">+</span><span class="token operator">=</span> users<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>Account <span class="token operator">+</span> <span class="token string">","</span><span class="token punctuation">;</span>                                    <span class="token punctuation">}</span>                                    agent<span class="token punctuation">.</span><span class="token function">tryGetChechedEle</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"XTextBox2"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setValue</span><span class="token punctuation">(</span>accounts<span class="token punctuation">)</span><span class="token punctuation">;</span>                                    <span class="token keyword">var</span> g <span class="token operator">=</span> window<span class="token punctuation">.</span>frameElement<span class="token punctuation">.</span>containerPanel<span class="token punctuation">;</span>                                    <span class="token keyword">var</span> btns <span class="token operator">=</span> g<span class="token punctuation">.</span>ownerCt<span class="token punctuation">.</span>ownerCt<span class="token punctuation">.</span>optButtons<span class="token punctuation">;</span>                                    <span class="token keyword">var</span> link <span class="token operator">=</span> btns<span class="token punctuation">[</span><span class="token number">15</span><span class="token punctuation">]</span><span class="token punctuation">.</span>link<span class="token punctuation">;</span>                                    g<span class="token punctuation">.</span>ownerCt<span class="token punctuation">.</span>ownerCt<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span>link<span class="token punctuation">)</span><span class="token punctuation">;</span>                                <span class="token punctuation">}</span>                            <span class="token punctuation">}</span><span class="token punctuation">)</span>                            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>                        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>                            <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>                        <span class="token punctuation">}</span>                    <span class="token punctuation">}</span>                <span class="token punctuation">}</span>            <span class="token punctuation">}</span>        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><p> 5.审批意见赋值</p><pre class=" language-js"><code class="language-js">        agent<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token punctuation">{</span>                Submit<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>action<span class="token punctuation">,</span> validationGroup<span class="token punctuation">,</span> data<span class="token punctuation">,</span> params<span class="token punctuation">)</span> <span class="token punctuation">{</span>                    params<span class="token punctuation">.</span>Header<span class="token punctuation">.</span>Comment <span class="token operator">=</span> <span class="token string">"aa"</span>                <span class="token punctuation">}</span>            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><p> 6.文本框取值赋值</p><pre class=" language-js"><code class="language-js"> agent<span class="token punctuation">.</span><span class="token function">tryGetChechedEle</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"id"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> agent<span class="token punctuation">.</span><span class="token function">tryGetChechedEle</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"id"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setValue</span><span class="token punctuation">(</span><span class="token string">"test"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> bpm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> bpm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vue</title>
+      <link href="/2020/04/09/vue/"/>
+      <url>/2020/04/09/vue/</url>
+      
+        <content type="html"><![CDATA[<ol><li><p>当页引用vue时注意，IE的不兼容性es6，如果data(){}需写成 data:function()</p></li><li><p>加载闪屏</p><pre class=" language-js"><code class="language-js">v<span class="token operator">-</span>cloak<span class="token punctuation">[</span>v<span class="token operator">-</span>cloak<span class="token punctuation">]</span> <span class="token punctuation">{</span>    display<span class="token punctuation">:</span> none<span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre></li><li><p>取消事件冒泡 @click.stop，阻止默认事件  @click.prevent</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>day20200409</title>
+      <link href="/2020/04/09/day409/"/>
+      <url>/2020/04/09/day409/</url>
+      
+        <content type="html"><![CDATA[<h1 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h1><pre class=" language-日常"><code class="language-日常">     1.设计测试申请内容维护</code></pre><hr><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><ol><li><p>Dynamics CRM 常用方法</p></li><li><p>using Microsoft.Xrm.Sdk;</p><p>[摘自]: <a href="https://blog.csdn.net/y_f123/article/details/49467681" target="_blank" rel="noopener">https://blog.csdn.net/y_f123/article/details/49467681</a> “菜刀2008”</p></li></ol><pre class=" language-C#"><code class="language-C#">            //建立连接            Uri uri = new Uri("http://127.0.0.1/Transfar/XRMServices/2011/Organization.svc");            System.ServiceModel.Description.ClientCredentials credentials = new ClientCredentials();            credentials.Windows.ClientCredential = new System.Net.NetworkCredential("crmadmin", "account", "password");            ColumnSet column = new ColumnSet();            Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy foa = new Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy(uri, null, credentials, null);            //foa.CallerId =Guid.Parse("");//代理账号，用于不同用户查看不同数据            IOrganizationService service = (IOrganizationService)foa;</code></pre><pre class=" language-C#"><code class="language-C#">            //创建数据            Entity aaa = new Entity();            aaa.LogicalName = "new_bpmtest";            aaa.Attributes.Add(new KeyValuePair<string,object>("new_ordernumber", "eee"));            Guid aid= service.Create(aaa);            //生成权限            AssignRequest assign = new AssignRequest();            EntityReference a = new EntityReference();            a.LogicalName = "systemuser";            a.Id = Guid.Parse("4BD078BB-7C7A-E811-BAB6-005056823038");            assign.Assignee = a;            assign.Target = new EntityReference("new_bpmtest", aid);            service.Execute(assign);</code></pre><pre class=" language-C#"><code class="language-C#">            //查询单条数据             ColumnSet cc = new ColumnSet();             cc.AddColumn("new_ordernumber");             Entity bb= service.Retrieve("new_bpmtest", aid, cc);</code></pre><pre class=" language-C#"><code class="language-C#">            //查询多条数据            QueryExpression query = new QueryExpression("account");            query.ColumnSet.AllColumns = false;//是否显示所有列            EntityCollection result = service.RetrieveMultiple(query);</code></pre><pre class=" language-C#"><code class="language-C#">            //查询所有实体            RetrieveAllEntitiesRequest request = new RetrieveAllEntitiesRequest();            request.RetrieveAsIfPublished = true;            request.EntityFilters = Microsoft.Xrm.Sdk.Metadata.EntityFilters.Entity;            RetrieveAllEntitiesResponse response = (RetrieveAllEntitiesResponse)service.Execute(request);            EntityMetadata[] dataArray = response.EntityMetadata;            foreach(EntityMetadata item in dataArray)            {                //实体名称                string name = item.LogicalName;             }</code></pre><pre class=" language-C#"><code class="language-C#">            // 查询单个实体的字段            RetrieveEntityRequest request = new RetrieveEntityRequest();            request.EntityFilters = EntityFilters.Attributes;            request.RetrieveAsIfPublished = true;            request.LogicalName = entityname;            RetrieveEntityResponse response = (RetrieveEntityResponse)service.Execute(request);            AttributeMetadata[] dataArray = response.EntityMetadata.Attributes;            foreach(AttributeMetadata item in dataArray)            {                //字段名称                string name = item.LogicalName;                //字段中文名称                string label = item.Description.UserLocalizedLabel.Label;                //字段类型                AttributeTypeCode code = item.AttributeType.Value;            }      ``` # 有感</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> diary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> share </tag>
+            
+            <tag> diary </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>day20200407</title>
+      <link href="/2020/04/07/day407/"/>
+      <url>/2020/04/07/day407/</url>
+      
+        <content type="html"><![CDATA[<h1 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h1><pre class=" language-日常"><code class="language-日常">   1.沟通项目，挺复杂的一个需求（维护表单选择项，各种规则，最终生成检测结果报告）</code></pre><hr><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><ol><li>出差了！好久没出差了，今天到杭州传化集团出差沟通需求，很烦，不想出差</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> diary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> share </tag>
+            
+            <tag> diary </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>BPM版本库</title>
+      <link href="/2020/04/03/bpmversion/"/>
+      <url>/2020/04/03/bpmversion/</url>
+      
+        <content type="html"><![CDATA[<h3 id="6-70b"><a href="#6-70b" class="headerlink" title="6.70b"></a>6.70b</h3><ul><li><p><a href="http://qn.lxyzy.top/SetupDisk__R6.70b.rar" target="_blank" rel="noopener">SetupDisk_R6.70b</a></p><details><summary>更新说明</summary><ol><li>“数据库若设置TaskID为主键，表单提交提示TaskID不能为空（紧急）<br>由Oracle自增列判断优化引起”</li><li>“彻底修正Asp.net FormsAuthentication Cookie为Lax的问题<br>虽然以前将SameSite强制设置为None起到一定作用，但现在发现None也是有问题的<br>1.chrome 64位版本80.0.3987.149 http请求不接受SameSite=None 的cookie（只能在https中使用），当http场合发送这样的cookie时，浏览器认为cookie错误，结果：在某些电脑上，BPM网站登录时输入正确账密后，登录页面不跳转<br>2.Response.Redirect时FormsAuthentication cookie为None或Lax有时不会传递到目标页面（Lax总是不传，None看浏览器版本），表现为：移动端打开PC表单某些情况下不会直接打开表单，而是跳转到登录页面的问题<br>目前采用解决办法：SameSite既不是Lax也不是None而是空<br>老版本可拷贝WEB\App_Code\YZSoft\Helper\YZAuthHelper.cs的2个方法：<br>public static void SetAuthCookie(string account)<br>public static void SetAuthCookie(string account, string token)”</li></ol></details></li></ul><h3 id="6-70a"><a href="#6-70a" class="headerlink" title="6.70a"></a>6.70a</h3><ul><li><p><a href="http://qn.lxyzy.top/SetupDisk__R6.70a.rar" target="_blank" rel="noopener">SetupDisk_R6.70a</a></p><details><summary>更新说明</summary><ol><li>“服务器端.net环境需4.5以上（原来是4.0），客户端还是4.0</li><li>服务器和WEB Newtonsoft.Json都升级为12.0.01</li><li>升级原因：系统使用的部分库需要.net4.5”</li><li>ESB2.0推出，除数据源外还支持输出，原ESB建的内容仍可用，也可修改，但取消新增功能</li><li>推出队列，支持异步输出</li><li>运维\任务移交模块，切换用户后，任务列表不会自动更新</li><li>报表设计器设计的报表没有导出Grid的按钮</li></ol></details></li></ul><h3 id="6-00f"><a href="#6-00f" class="headerlink" title="6.00f"></a>6.00f</h3><ul><li><p><a href="http://qn.lxyzy.top/SetupDisk_R6.00f.rar" target="_blank" rel="noopener">SetupDisk_R6.00f</a></p><details><summary>更新说明</summary><ol><li><p>流程运维 ，任务移交时选择 在途申请的任务移交会出错</p></li><li><p>应用客制模块，记录授权，点击报错</p></li><li><p>集成管理，添加BPM服务器，示例数据端口为1590,建议1580</p></li><li><p>报表，明细表没有记录勾选的字段。下次设置需重新勾选</p></li><li><p>下拉列表通过别的字段过滤 ，然后赋值给金额。移动端输入数据没有过滤出结果时，金额字段为上一次过滤的结果，应该为空过滤增加!=选项（涉及表单数据源和开窗查询）</p></li><li><p>“支持数据库连接信息存储到外部系统，在Server.config,database节，增加ConnectionStringProvider配置项，如下：<br><ConnectionStringProvider>MyConnectionProvider.Provider,MyConnectionProvider</ConnectionStringProvider><br>新建库：MyConnectionProvider.dll，添加类：MyConnectionProvider.Provider<br>实现接口：<br>BPM.Server.Interface.IConnectionStringProvider，通过GetConnectionString方法返回连接字符串”</p></li><li><p>6.00f主数据库支持Oracle</p></li><li><p>在阅示节点，处理人再次启用阅示，选择人员，提交后报错</p></li><li><p>ExtServer对应的.svr文件中连接信息，用户名、密码加密（对于已存在的ExtServer，重新保存后会自动加密）</p></li><li><p>访问控制模块，增加资源权限管理，可授权资源管理员和授权管理员，资源管理员可在后台模块编辑资源，授权管理员可在运维模块修改资源权限</p></li><li><p>一人多岗，增加设置缺省职位，管理员在组织管理中修改，个人在岗位地图中修改，在起流程时，缺省职位显示在最前面</p></li></ol></details></li></ul><h3 id="4-0-5-0"><a href="#4-0-5-0" class="headerlink" title="4.0~5.0"></a>4.0~5.0</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> bpm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> BPM </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>day20200403</title>
+      <link href="/2020/04/03/day403/"/>
+      <url>/2020/04/03/day403/</url>
+      
+        <content type="html"><![CDATA[<h1 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h1><pre class=" language-日常"><code class="language-日常"></code></pre><hr><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><ol><li><p>今天想用 github action 编译android工程，搞了很久一直搞不定放弃了，以后有机会再研究下吧，应该是ubuntu自带的gradle 版本和我工程不匹配</p><pre class=" language-yml"><code class="language-yml">name: Android CIon: [push]jobs:build:runs-on: ubuntu-lateststeps:- uses: actions/checkout@v1- name: Run Unit tests  run: |       gradle wrapper       gradlew build</code></pre></li></ol><h1 id="有感"><a href="#有感" class="headerlink" title="有感"></a>有感</h1><ol><li>疫情好久了，昨晚没有做饭，今天叫外卖了</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> diary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> share </tag>
+            
+            <tag> diary </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>day20200402</title>
+      <link href="/2020/04/02/day402/"/>
+      <url>/2020/04/02/day402/</url>
+      
+        <content type="html"><![CDATA[<h1 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h1><pre class=" language-日常"><code class="language-日常">     1.正式替换blog新域名，原域名还可以继续使用</code></pre><hr><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><ul><li><p>初始化 git仓库</p><pre><code># git init# git add *# git commit -m &quot;My initial commit message&quot;# git remote add origin git@example.com:example.git# git push -u origin master</code></pre><ul><li>git 大文件处理</li></ul><p>```</p></li></ul><ol><li><p>安装GitHub LFS</p></li><li><p>git lfs install</p></li><li><p>git lfs track “*.bz2” 某些后缀的大文件</p></li><li><p>git add .gitattributes</p></li><li><p>git add xxx</p></li><li><p>git commit -m</p></li><li><p>git push</p><pre><code>&gt; 最好关闭防火墙&gt; 只有先把&quot;.gitattributes&quot;传上去，才可以上传大文件。</code></pre></li></ol><h1 id="有感"><a href="#有感" class="headerlink" title="有感"></a>有感</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> diary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> share </tag>
+            
+            <tag> diary </tag>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>day20200401</title>
+      <link href="/2020/04/01/day401/"/>
+      <url>/2020/04/01/day401/</url>
+      
+        <content type="html"><![CDATA[<h1 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h1><pre class=" language-日常"><code class="language-日常">     1.到网警总队签字（因为之前公司社区有人发恶意文字），去执行行政处罚签字</code></pre><hr><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><ul><li></li></ul><h1 id="有感"><a href="#有感" class="headerlink" title="有感"></a>有感</h1><ol><li>对于对外的社区博客等等还是做好安全策略，实名认证，关键字过滤等等</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> diary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> share </tag>
+            
+            <tag> diary </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>blogupdatelog</title>
+      <link href="/2020/03/31/blogupdatelog/"/>
+      <url>/2020/03/31/blogupdatelog/</url>
+      
+        <content type="html"><![CDATA[<h2 id="v1-0-3"><a href="#v1-0-3" class="headerlink" title="v1.0.3"></a>v1.0.3</h2><ul><li><code>20200402</code><ul><li>更新说明</li><li>【修改】替换博客新域名（linxueyang.cn）</li></ul></li></ul><h2 id="v1-0-2"><a href="#v1-0-2" class="headerlink" title="v1.0.2"></a>v1.0.2</h2><ul><li><code>20200401</code><ul><li>更新说明</li><li>【新增】新增谷歌adsense（审核中，增加点收入）</li><li>【修改】主题色修改为暗色</li></ul></li></ul><h2 id="v1-0-1"><a href="#v1-0-1" class="headerlink" title="v1.0.1"></a>v1.0.1</h2><ul><li><p><code>20200331</code></p></li><li><p>更新说明<br>-【新增】自动化部署(github action)</p></li><li><p>配置说明</p><ol><li>配置公钥和私钥<br>私钥：settings/secrets(你的项目)<br>公钥：settings/keys(主页gi)</li></ol></li></ul><pre class=" language-yml"><code class="language-yml">name: 自动部署 Hexoon:   push:    branches:      - masterjobs:  build:    runs-on: ubuntu-latest    strategy:      matrix:        node-version: [10.x]    steps:      - name: 开始运行        uses: actions/checkout@v1      - name: 设置 Node.js ${{ matrix.node-version }}        uses: actions/setup-node@v1        with:          node-version: ${{ matrix.node-version }}      - name: 配置 Git 环境        env:          ACTION_DEPLOY_KEY: ${{secrets.HEXO_DEPLOY_PRIVATE_KEY}}        run: |          mkdir -p ~/.ssh/          echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa          chmod 600 ~/.ssh/id_rsa          ssh-keyscan github.com >> ~/.ssh/known_hosts          git config --global user.name "linxueyang"          git config --global user.email "584790982@qq.com"      - name: 安装 Hexo CI        run: |          npm i -g hexo-cli          npm i      - name: 安装插件        run: |          npm install hexo-asset-image --save          npm install hexo-generator-archive --save          npm install hexo-generator-category --save          npm install hexo-generator-feed --save          npm install hexo-generator-index --save          npm install hexo-generator-tag --save          npm install hexo-generator-search --save          npm install hexo-helper-live2d --save          npm install hexo-permalink-pinyin --save          npm install hexo-prism-plugin --save          npm install hexo-renderer-ejs --save          npm install hexo-renderer-marked --save          npm install hexo-renderer-stylus --save          npm install hexo-deployer-git --save          npm install live2d-widget-model-haruto --save          npm install hexo-wordcount --save      - name: 部署博客        run: |          hexo generate && hexo deploy # 执行部署程序</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> html </tag>
+            
+            <tag> github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>day20200331</title>
+      <link href="/2020/03/31/day331/"/>
+      <url>/2020/03/31/day331/</url>
+      
+        <content type="html"><![CDATA[<h1 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h1><pre class=" language-日常"><code class="language-日常">     1.完成博客自动化部署 (github action)</code></pre><hr><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><ul><li><p>表单下拉框动态增加</p><pre class=" language-javascript"><code class="language-javascript">  <span class="token keyword">function</span> <span class="token function">addoption</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#XDropDownList4"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token string">"select"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> value<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>            <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#XDropDownList4"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token string">"select"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">"&lt;option value='"</span> <span class="token operator">+</span> <span class="token punctuation">(</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"'>"</span> <span class="token operator">+</span> <span class="token punctuation">(</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"&lt;/option>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>    <span class="token punctuation">}</span></code></pre></li></ul><h1 id="有感"><a href="#有感" class="headerlink" title="有感"></a>有感</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> diary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> BPM </tag>
+            
+            <tag> share </tag>
+            
+            <tag> diary </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>day20200330</title>
+      <link href="/2020/03/30/day330/"/>
+      <url>/2020/03/30/day330/</url>
+      
+        <content type="html"><![CDATA[<h1 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h1><pre class=" language-日常"><code class="language-日常">     1.【完成】博客源码托管到github     2.【修改】博客主题色修改</code></pre><hr><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><ul><li>如何用命令将本地项目上传到git</li></ul><ol><li>（先进入项目文件夹）通过命令 git init 把这个目录变成git可以管理的仓库<pre><code>git init</code></pre></li><li>把文件添加到版本库中，使用命令 git add .添加到暂存区里面去，不要忘记后面的小数点“.”，意为添加文件夹下的所有文件<pre><code>git add .</code></pre></li><li>用命令 git commit告诉Git，把文件提交到仓库。引号内为提交说明<pre><code>git commit -m &#39;first commit&#39;</code></pre></li><li>关联到远程库<pre><code>git remote add origin 你的远程库地址</code></pre></li><li>获取远程库与本地同步合并（如果远程库不为空必须做这一步，否则后面的提交会失败）<pre><code>git pull --rebase origin master</code></pre></li><li>把本地库的内容推送到远程，使用 git push命令，实际上是把当前分支master推送到远程。执行此命令后会要求输入用户名、密码，验证通过后即开始上传。<pre><code>git push -u origin master</code></pre></li></ol><ul><li>文件修改后如何提交上传<pre><code>git add .git commit -m &quot;Auto commit.&quot; git push</code></pre><blockquote><p>git add . ：他会监控工作区的状态树，使用它会把工作时的所有变化提交到暂存区，包括文件内容修改(modified)以及新文件(new)，但不包括被删除的文件。<br>git add -u ：他仅监控已经被add的文件（即tracked file），他会将被修改的文件提交到暂存区。add -u 不会提交新文件（untracked file）。（git add –update的缩写）<br>git add -A ：是上面两个功能的合集（git add –all的缩写）</p></blockquote><h1 id="有感"><a href="#有感" class="headerlink" title="有感"></a>有感</h1><ol><li>新的购买了域名，正在备案中，以后打算使用新的域名（linxueyang.cn）</li><li>因为疫情的影响回到上海后一直住在小宝的爸妈家，已经住了两个月了，以前租的房子没有退，新的房子还没有装修，但是她爸妈又不想我回原来的租的地方，所以想了很久昨天把租的房子了，不知道这样是否合适，因为我其实并不喜欢住在别人家虽然她是未婚妻，但还是觉得不自在，想想为了她，我就再住一段时间吧，希望未来更好!</li></ol></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> diary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> github </tag>
+            
+            <tag> share </tag>
+            
+            <tag> diary </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>七牛云CDN 配置</title>
+      <link href="/2020/03/27/qiniucdn/"/>
+      <url>/2020/03/27/qiniucdn/</url>
+      
+        <content type="html"><![CDATA[<h1 id="CDN-配置"><a href="#CDN-配置" class="headerlink" title="CDN 配置"></a>CDN 配置</h1><p><code>因为博客空间有限，所以使用七牛云存储博客中的附件</code></p><h3 id="七牛云"><a href="#七牛云" class="headerlink" title="七牛云"></a>七牛云</h3><ul><li><p>注册登录</p><img src="/2020/03/27/qiniucdn/1.png" width="100%" height="400" alt="注册登录" align="center"></li><li><p>存储</p><img src="/2020/03/27/qiniucdn/2.png" width="100%" height="400" alt="存储文件" align="center"><p><code>外联域名即为我们需要配置的域名，只有此外联域名才可以下载文件</code>   </p></li><li><p>域名配置  </p><img src="/2020/03/27/qiniucdn/3.png" width="100%" height="400" alt="域名配置" align="center"></li></ul> <img src="/2020/03/27/qiniucdn/4.png" width="100%" height="400" alt="CHAME" align="center">  <p>   <code>需实名制认证，不然域名配置不成功</code><br>   <code>输入的域名即为已认证好的域名，可使用二级域名</code></p><ul><li><p>域名解析 </p><img src="/2020/03/27/qiniucdn/5.png" width="100%" height="400" alt="域名解析" align="center">   <p><code>记录类型:CHAME</code><br><code>主机记录:在七牛里面填写的域名</code><br><code>记录值: 图CHAME中的值</code>  </p><ul><li>免费额度</li></ul><img src="/2020/03/27/qiniucdn/6.png" width="100%" height="400" alt="免费额度" align="center">    </li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> CDN </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>day20200327</title>
+      <link href="/2020/03/27/day327/"/>
+      <url>/2020/03/27/day327/</url>
+      
+        <content type="html"><![CDATA[<h1 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h1><pre class=" language-日常"><code class="language-日常">     1.完成安卓app测试版1，替换图标和启动图</code></pre><hr><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><ul><li><p>安卓尺寸</p><ul><li><p>icon图标尺寸：</p><pre><code>   drawable-ldpi-icon 36*36   drawable-mdpi-icon 48*48   drawable-hdpi-icon 72*72   drawable-xhdpi-icon 96*96   drawable-xxhdpi-icon 144*144   drawable-xxxhdpi-icon 192*192</code></pre></li><li><p>启动页：</p><ul><li><p>横屏 宽×高</p><pre><code>drawable-land-ldpi-screen 200*320drawable-land-mdpi-screen 320*480drawable-land-hdpi-screen 480*800drawable-land-xhdpi-screen 720*1280drawable-land-xxhdpi-screen 960*1600drawable-land-xxxhdpi-screen 1280*1920</code></pre><ul><li>竖屏 高×宽</li></ul><pre><code>drawable-port-ldpi-screen 320*200drawable-port-mdpi-screen 480*320drawable-port-hdpi-screen 800*480drawable-port-xhdpi-screen 1280*720drawable-port-xxhdpi-screen 1600*960drawable-port-xxxhdpi-screen 1920*1280</code></pre></li></ul></li></ul></li></ul><ul><li><p>企信通</p><ul><li><p>修改图标和启动图 \cordova\platforms\android\res</p></li><li><p>修改登录页 LOGO  \cordova\platforms\android\assets\www\YZSoft$Boot\images</p><p><a href="http://qn.lxyzy.top/android.rar" target="_blank">安卓源码</a></p><h1 id="有感"><a href="#有感" class="headerlink" title="有感"></a>有感</h1></li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> diary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> BPM </tag>
+            
+            <tag> share </tag>
+            
+            <tag> diary </tag>
+            
+            <tag> android </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>day20200326</title>
+      <link href="/2020/03/26/day326/"/>
+      <url>/2020/03/26/day326/</url>
+      
+        <content type="html"><![CDATA[<h1 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h1><pre class=" language-日常"><code class="language-日常">     1.更新bpmwebapp 版本 v1.0.1，新增流程收藏功能     2.完成bpmwebapp 版本说明文档     3.打包安卓app测试版，登录页在android\assets\www\YZSoft$Boot\login\Panel.js</code></pre><hr><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><h1 id="有感"><a href="#有感" class="headerlink" title="有感"></a>有感</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> diary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> BPM </tag>
+            
+            <tag> share </tag>
+            
+            <tag> diary </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>BPM WEBAPP 版本说明</title>
+      <link href="/2020/03/26/bpmwebappversion/"/>
+      <url>/2020/03/26/bpmwebappversion/</url>
+      
+        <content type="html"><![CDATA[<h2 id="v1-0-4"><a href="#v1-0-4" class="headerlink" title="v1.0.4"></a>v1.0.4</h2><ul><li><p><code>20200526</code></p></li><li><p>更新说明<br>-【修复】日期控件月份显示为英文</p></li><li><p>文件</p><ul><li><a href="v1.0.1/appadmin.rar" target="_blank">后台管理源码(vue)</a></li><li><a href="v1.0.1/appsource.rar" target="_blank">WEBAPP源码(vue)</a></li><li><a href="v1.0.4/app.rar" target="_blank">部署文件</a><blockquote><p>可替换文直接修改文件进行修改<br>app.js 文件中第338行新增下面语句<br>YZSoft.Globalization.JSLangInit.serverIndicated();</p></blockquote></li></ul></li></ul><h2 id="v1-0-3"><a href="#v1-0-3" class="headerlink" title="v1.0.3"></a>v1.0.3</h2><ul><li><p><code>20200415</code></p></li><li><p>更新说明<br>-【修复】图片控件(XImageAttachment)支持微信拍照上传</p></li><li><p>文件</p><ul><li><a href="v1.0.1/appadmin.rar" target="_blank">后台管理源码(vue)</a></li><li><a href="v1.0.1/appsource.rar" target="_blank">WEBAPP源码(vue)</a></li><li><a href="v1.0.3/app.rar" target="_blank">部署文件</a><blockquote><p>可替换文件进行升级,拷贝app.rar中<br>1.EMIP\Web\YZSoft\src\field\ImageAttachment.js<br>2.EMIP\Web\YZSoft\src\field\ImageAttachment\vue.js</p></blockquote></li></ul></li></ul><h2 id="v1-0-2"><a href="#v1-0-2" class="headerlink" title="v1.0.2"></a>v1.0.2</h2><ul><li><p><code>20200403</code></p></li><li><p>更新说明<br>-【修复】菜单地址长度,数据库<code>BPMAPPADMIN_TBAR_D</code>,<code>BPMAPPADMIN_HOME_MENUS</code>字段已设置为max</p></li><li><p>文件</p><ul><li><a href="v1.0.1/appadmin.rar" target="_blank">后台管理源码(vue)</a></li><li><a href="v1.0.1/appsource.rar" target="_blank">WEBAPP源码(vue)</a></li><li><a href="v1.0.2/app.rar" target="_blank">部署文件</a></li></ul></li></ul><h2 id="v1-0-1"><a href="#v1-0-1" class="headerlink" title="v1.0.1"></a>v1.0.1</h2><ul><li><p><code>20200326</code></p></li><li><p>更新说明<br>-【新增】流程收藏<br>-【修复】Tbar如果未设置英文名称，切换语言为空</p></li><li><p>效果</p><ul><li>收藏功能<ul><li><img src="http://www.linxueyang.cn/2020/03/26/bpmwebappversion/v1.0.1/image/1.gif" width="50%" height="50%"></li></ul></li></ul></li><li><p>文件</p><ul><li><a href="v1.0.1/appadmin.rar" target="_blank">后台管理源码(vue)</a></li><li><a href="v1.0.1/appsource.rar" target="_blank">WEBAPP源码(vue)</a></li><li><a href="v1.0.1/app.rar" target="_blank">部署文件</a></li></ul></li></ul><h2 id="v1-0-0"><a href="#v1-0-0" class="headerlink" title="v1.0.0"></a>v1.0.0</h2><ul><li><code>20200325</code></li><li>更新说明<ul><li>初始化版本</li></ul></li><li>文件<ul><li><a href="v1.0.0/appadmin.rar" target="_blank">后台管理源码(vue)</a></li><li><a href="v1.0.0/appsource.rar" target="_blank">WEBAPP源码(vue)</a></li><li><a href="v1.0.0/app.rar" target="_blank">部署文件</a></li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> bpm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> html </tag>
+            
+            <tag> vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>day20200325</title>
+      <link href="/2020/03/25/day325/"/>
+      <url>/2020/03/25/day325/</url>
+      
+        <content type="html"><![CDATA[<h1 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h1><pre class=" language-日常"><code class="language-日常">     1.完成webapp 演示和文档编写</code></pre><hr><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><pre class=" language-js"><code class="language-js">        <span class="token comment" spellcheck="true">//BPM 4.7版本 开窗查询 拦截</span>           YZSoft<span class="token punctuation">.</span>XForm<span class="token punctuation">.</span>BrowserButton<span class="token punctuation">.</span>BeforePopupFuncs<span class="token punctuation">.</span>DataBrowser <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">,</span> d<span class="token punctuation">,</span> e<span class="token punctuation">,</span> f<span class="token punctuation">)</span> <span class="token punctuation">{</span>            b<span class="token punctuation">.</span>fn <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>a<span class="token punctuation">,</span> rows<span class="token punctuation">)</span> <span class="token punctuation">{</span>                <span class="token comment" spellcheck="true">//rows 即为选择的数组</span>            <span class="token punctuation">}</span>        <span class="token punctuation">}</span>         <span class="token comment" spellcheck="true">//BPM 5.7版本 开窗查询 拦截</span>           OnAfterLoad <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>            Ext<span class="token punctuation">.</span><span class="token function">override</span><span class="token punctuation">(</span>YZSoft<span class="token punctuation">.</span>Forms<span class="token punctuation">.</span>Field<span class="token punctuation">.</span>DataBrowserButton<span class="token punctuation">,</span> <span class="token punctuation">{</span>                onClick<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>                    <span class="token keyword">var</span> me <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>                    <span class="token keyword">var</span> initAccounts<span class="token punctuation">;</span>                    <span class="token keyword">if</span> <span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>name <span class="token operator">==</span> <span class="token string">"XDataBrowserButton1"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//判断按钮</span>                        <span class="token keyword">var</span> me <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">,</span>                 et <span class="token operator">=</span> me<span class="token punctuation">.</span><span class="token function">getEleType</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>                 ds <span class="token operator">=</span> et<span class="token punctuation">.</span>DataSource<span class="token punctuation">,</span>                 config <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>                        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>ds<span class="token punctuation">)</span>                            <span class="token keyword">return</span><span class="token punctuation">;</span>                        <span class="token keyword">if</span> <span class="token punctuation">(</span>et<span class="token punctuation">.</span>width <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span>                            config<span class="token punctuation">.</span>width <span class="token operator">=</span> config<span class="token punctuation">.</span>minWidth <span class="token operator">=</span> et<span class="token punctuation">.</span>width<span class="token punctuation">;</span>                        <span class="token comment" spellcheck="true">//高度自适应，随搜索条件增加，自动增加高度</span>                        <span class="token keyword">if</span> <span class="token punctuation">(</span>et<span class="token punctuation">.</span>height <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>                            config<span class="token punctuation">.</span>gridConfig <span class="token operator">=</span> <span class="token punctuation">{</span>                                height<span class="token punctuation">:</span> et<span class="token punctuation">.</span>height <span class="token operator">-</span> <span class="token number">100</span>                            <span class="token punctuation">}</span>                        <span class="token punctuation">}</span>                        Ext<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token string">'YZSoft.Forms.Field.Dialogs.DataBrowserDlg'</span><span class="token punctuation">,</span> Ext<span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span><span class="token punctuation">{</span>                            autoShow<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                            ds<span class="token punctuation">:</span> ds<span class="token punctuation">.</span>identity<span class="token punctuation">,</span>                            filters<span class="token punctuation">:</span> me<span class="token punctuation">.</span><span class="token function">getCurrentFilters</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>                            displayColumns<span class="token punctuation">:</span> et<span class="token punctuation">.</span>displayColumns<span class="token punctuation">,</span>                            mapColumns<span class="token punctuation">:</span> et<span class="token punctuation">.</span>DataMap <span class="token operator">?</span> et<span class="token punctuation">.</span>DataMap<span class="token punctuation">.</span>columnNames <span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>                            multiSelect<span class="token punctuation">:</span> et<span class="token punctuation">.</span>multiSelect<span class="token punctuation">,</span>                            title<span class="token punctuation">:</span> Ext<span class="token punctuation">.</span>String<span class="token punctuation">.</span><span class="token function">format</span><span class="token punctuation">(</span><span class="token string">'{0} - {1}'</span><span class="token punctuation">,</span> RS<span class="token punctuation">.</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'All_DataBrowserWindowTitle'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> ds<span class="token punctuation">.</span>identity<span class="token punctuation">.</span>TableName <span class="token operator">||</span> ds<span class="token punctuation">.</span>identity<span class="token punctuation">.</span>ProcedureName <span class="token operator">||</span> ds<span class="token punctuation">.</span>identity<span class="token punctuation">.</span>ESB<span class="token punctuation">)</span><span class="token punctuation">,</span>                            fn<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>user<span class="token punctuation">)</span> <span class="token punctuation">{</span>                                <span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                                $<span class="token punctuation">.</span><span class="token function">each</span><span class="token punctuation">(</span>user<span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>i<span class="token punctuation">,</span> item<span class="token punctuation">)</span> <span class="token punctuation">{</span>                                    arr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>字段名<span class="token punctuation">)</span><span class="token punctuation">;</span>                                <span class="token punctuation">}</span><span class="token punctuation">)</span>                                agent<span class="token punctuation">.</span><span class="token function">tryGetChechedEle</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"id"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setValue</span><span class="token punctuation">(</span>arr<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                            <span class="token punctuation">}</span>                        <span class="token punctuation">}</span><span class="token punctuation">,</span> config<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                    <span class="token punctuation">}</span>                <span class="token punctuation">}</span>            <span class="token punctuation">}</span><span class="token punctuation">)</span>        <span class="token punctuation">}</span></code></pre><h1 id="有感"><a href="#有感" class="headerlink" title="有感"></a>有感</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> diary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> BPM </tag>
+            
+            <tag> share </tag>
+            
+            <tag> diary </tag>
+            
+            <tag> DataBrowser </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>bpmwebapp</title>
+      <link href="/2020/03/25/bpmapp/"/>
+      <url>/2020/03/25/bpmapp/</url>
+      
+        <content type="html"><![CDATA[<img src="/2020/03/25/bpmapp/image/4.PNG" width="400" height="400" alt="样例效果" align="center"><video width="100%" height="320" controls><source src="image/1.MP4"></video><p><code>预览地址</code></p><p><a href="http://emip.lxyzy.top:8081/emip/app/dist/#/login" target="_blank" rel="noopener">bpmwebapp</a></p><h1 id="APP界面结构说明"><a href="#APP界面结构说明" class="headerlink" title="APP界面结构说明"></a>APP界面结构说明</h1><img src="/2020/03/25/bpmapp/image/12.png" width="100%" height="800" alt="app结构说明" align="center"><h1 id="部署文件"><a href="#部署文件" class="headerlink" title="部署文件"></a>部署文件</h1><ul><li><a href="http://www.linxueyang.cn/2020/03/26/bpmwebappversion/" target="_blank">BPMWEBAPP版本</a></li></ul><h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><h2 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h2><pre><code>  . windows server  . sqlserver  . iis</code></pre><h2 id="BPM"><a href="#BPM" class="headerlink" title="BPM"></a>BPM</h2><pre><code>安装BPM，安装包自行获取</code></pre><h2 id="EMIP"><a href="#EMIP" class="headerlink" title="EMIP"></a>EMIP</h2><pre><code>部署EMIP到BPM中</code></pre><p><code>以下说明 默认EMIP在BPM中的应用程序，并不在根目录，如在根目录自行修改</code></p><h2 id="APP部署"><a href="#APP部署" class="headerlink" title="APP部署"></a>APP部署</h2><h3 id="文件拷贝"><a href="#文件拷贝" class="headerlink" title="文件拷贝"></a>文件拷贝</h3><pre><code>  1. 将 文件目录中=&gt; 部署文件 =&gt; EMIP         拷贝到部署的emip中进行文件替换   2. 将 文件目录中=&gt; 部署文件 =&gt; appsql.sql   执行到数据库中(目前只支持sqlserver数据库) </code></pre><p><code>表结构说明</code></p><table><thead><tr><th>表名</th><th>说明</th></tr></thead><tbody><tr><td>BPMAPPADMIN_HOME_MENUS</td><td>菜单表，存储菜单</td></tr><tr><td>BPMAPPADMIN_HOME_MENUS_PERM</td><td>菜单权限表</td></tr><tr><td>BPMAPPADMIN_HOME_NOTICE</td><td>通知公告配置表</td></tr><tr><td>BPMAPPADMIN_HOME_SWIPE</td><td>新闻轮播配置表</td></tr><tr><td>BPMAPPADMIN_MENU_APPCONFIG</td><td>菜单中应用配置表</td></tr><tr><td>BPMAPPADMIN_PERSONAL_CONFIG</td><td>个人配置表目前只有存储中英文</td></tr><tr><td>BPMAPPADMIN_TBAR_D</td><td>底部tbar明细表</td></tr><tr><td>BPMAPPADMIN_TBAR_M</td><td>底部tbar主表，选择颜色</td></tr></tbody></table><h3 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h3><h4 id="本地访问"><a href="#本地访问" class="headerlink" title="本地访问"></a>本地访问</h4><pre><code>  1. 后台管理：http://本地地址/emip/admin/dist/          (只有超级管理员即administartor组可以登录配置)  2. webapp:  http://本地地址/emip/app/dist/#/login     (默认登录账号为sa,如需修改请修改 emip/appadmin/login/login.ashx 见下图)  </code></pre><p><code>如果访问出现http错误，检查EMIP\Web\APP\dist\index.html 中 yzapiurl配置是否当前程序地址，默认是emip</code></p><img src="/2020/03/25/bpmapp/image/20.png" width="100%" height="400" alt="修改yzapiurl" align="center"><img src="/2020/03/25/bpmapp/image/1.png" width="100%" height="400" alt="替换登录账号" align="center"><h4 id="微信访问"><a href="#微信访问" class="headerlink" title="微信访问"></a>微信访问</h4><pre><code>  1. 修改 EMIP\Web\APP\dist\index.html 中 agentId corpid appSecret (具体获取方法请查询微信企业号官网)  2. 配置企业号后台，     工作台应用主页：http://域名/emip/app/dist/#/wechat     网页授权及JS-SDK: 域名（必须配置，不然没法登录和使用附件上传）</code></pre><p><code>如果访问出现http错误，检查EMIP\Web\APP\dist\index.html 中 yzapiurl配置是否当前程序地址，默认是emip</code><br><img src="/2020/03/25/bpmapp/image/3.png" width="100%" height="400" alt="修改index" align="center"><br><img src="/2020/03/25/bpmapp/image/2.png" width="100%" height="400" alt="企业号配置" align="center"></p><h2 id="应用配置"><a href="#应用配置" class="headerlink" title="应用配置"></a>应用配置</h2><h3 id="后台登录"><a href="#后台登录" class="headerlink" title="后台登录"></a>后台登录</h3><pre><code> http://本地地址/emip/admin/dist/    (只有超级管理员即administartor组可以登录配置)</code></pre><p><code>如需修改登录administartor组限制，可修改文件EMIP\Web\appadmin\api\login.ashx中的配置</code></p><img src="/2020/03/25/bpmapp/image/5.png" width="100%" height="800" alt="后台配置页面" align="center"><h3 id="Tbar配置"><a href="#Tbar配置" class="headerlink" title="Tbar配置"></a>Tbar配置</h3><pre><code> 点击右侧编辑</code></pre><img src="/2020/03/25/bpmapp/image/6.png" width="100%" height="800" alt="Tbar" align="center"><p><code>参数说明</code></p><table><thead><tr><th>字段</th><th>必填</th><th>说明</th></tr></thead><tbody><tr><td>选中标签的颜色</td><td>是</td><td>tbar点击选择时显示的颜色</td></tr><tr><td>未选中标签的颜色</td><td>是</td><td>tbar未点击选择时显示的颜色</td></tr></tbody></table><h4 id="新增Tbar"><a href="#新增Tbar" class="headerlink" title="新增Tbar"></a>新增Tbar</h4><img src="/2020/03/25/bpmapp/image/7.png" width="100%" height="800" alt="Tbar配置" align="center"><p><code>参数说明</code></p><table><thead><tr><th>字段</th><th>必填</th><th>说明</th></tr></thead><tbody><tr><td>CODE</td><td>否</td><td>用于后台判断，index时可以配置主页，其他值可以随便填写</td></tr><tr><td>中文名</td><td>是</td><td>底部tabr中文名称</td></tr><tr><td>英文名</td><td>否</td><td>切换英文时显示，如果为空，切换英文时显示中文</td></tr><tr><td>选中图片</td><td>是</td><td>点击tbar显示的图片，图片颜色最好和tbar选中标签的颜色一致,图片必须为PNG且小于1M</td></tr><tr><td>未选中图片</td><td>是</td><td>未点击显示的图片,图片必须为PNG且小于1M</td></tr><tr><td>地址</td><td>是</td><td>可配两种地址<br>1.vue ：路由地址 <br>2.html : /html?url=<a href="http://baidu.com&amp;name=百度" target="_blank" rel="noopener">http://baidu.com&amp;name=百度</a><br>默认两个地址1./index(主页) 2./my(我的)</td></tr><tr><td>排序</td><td>是</td><td>tbar显示的顺序</td></tr></tbody></table><p><code>如果上传图片提示权限不足，需把文件夹EMIP\Web\appadmin\upload赋相应的权限</code></p><h3 id="新闻轮播配置"><a href="#新闻轮播配置" class="headerlink" title="新闻轮播配置"></a>新闻轮播配置</h3><img src="/2020/03/25/bpmapp/image/8.png" width="100%" height="800" alt="新闻轮播" align="center"><p><code>参数说明</code></p><table><thead><tr><th>字段</th><th>说明</th></tr></thead><tbody><tr><td>是否开启新闻轮播</td><td>关闭后webapp将不显示</td></tr><tr><td>自动轮播间隔</td><td>切换图片的间隔时长</td></tr><tr><td>动画时长</td><td>切换图片的时长</td></tr><tr><td>是否开启循环播放</td><td>开启后轮播到最后将从第一张开始</td></tr><tr><td>是否显示指示器</td><td>轮播下面显示指示器</td></tr><tr><td>是否为纵向滚动</td><td>默认为横向滚动，开始后将纵向滚动</td></tr><tr><td>数据源类型</td><td></td></tr><tr><td>静态数据源</td><td>可以上传图片</td></tr><tr><td>动态数据源</td><td>添加接口地址，动态数据源返回示例:{ success:true,//必须 list:{ url:’’//必须 } }</td></tr></tbody></table><p><code>动态数据源 list数组中的url为图片地址</code></p><h3 id="公告滚动配置"><a href="#公告滚动配置" class="headerlink" title="公告滚动配置"></a>公告滚动配置</h3><img src="/2020/03/25/bpmapp/image/9.png" width="100%" height="800" alt="公告滚动" align="center"><p><code>参数说明</code></p><table><thead><tr><th>字段</th><th>说明</th></tr></thead><tbody><tr><td>是否开启公告滚动</td><td>关闭后webapp将不显示</td></tr><tr><td>文本颜色</td><td>公告的文字颜色</td></tr><tr><td>滚动条背景</td><td>公告背景颜色</td></tr><tr><td>动画延迟时间 (s)</td><td></td></tr><tr><td>滚动速率 (px/s)</td><td></td></tr><tr><td>数据源类型</td><td></td></tr><tr><td>静态数据源</td><td>写文字</td></tr><tr><td>动态数据源</td><td>添加接口地址，动态数据源返回示例:{ success:true,//必须 text:””//必须 }</td></tr></tbody></table><h3 id="菜单配置"><a href="#菜单配置" class="headerlink" title="菜单配置"></a>菜单配置</h3><img src="/2020/03/25/bpmapp/image/10.png" width="100%" height="800" alt="菜单配置" align="center"><h4 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h4><img src="/2020/03/25/bpmapp/image/11.png" width="100%" height="800" alt="分类" align="center"><p><code>参数说明</code></p><table><thead><tr><th>字段</th><th>必填</th><th>说明</th></tr></thead><tbody><tr><td>分类所属</td><td>否</td><td>菜单属于哪个目录下</td></tr><tr><td>分类名称(中文)</td><td>是</td><td>分类的中文名称</td></tr><tr><td>分类名称(英文)</td><td>否</td><td>分类的英文名称，如不填切换英文时则显示中文名称</td></tr><tr><td>宫格列数</td><td>是</td><td>大类分类下菜单每一行显示菜单个数</td></tr><tr><td>间距(PX)</td><td>是</td><td>菜单之间的间隔</td></tr><tr><td>是否显示边框</td><td>否</td><td>不选择则不显示边框</td></tr><tr><td>可见安全组</td><td>否</td><td>此类别哪些安全组可见，如不选择则都不可见，安全组来源于BPM安全组，新增和编辑请到BPM修改</td></tr><tr><td>排序</td><td>是</td><td>分类显示的顺序</td></tr></tbody></table><h4 id="菜单"><a href="#菜单" class="headerlink" title="菜单"></a>菜单</h4><img src="/2020/03/25/bpmapp/image/13.png" width="100%" height="800" alt="菜单" align="center"><p><code>参数说明</code></p><table><thead><tr><th>字段</th><th>必填</th><th>说明</th></tr></thead><tbody><tr><td>菜单所属</td><td>否</td><td>菜单属于哪个目录下</td></tr><tr><td>菜单名称(中文)</td><td>是</td><td>菜单的中文名称</td></tr><tr><td>菜单名称(英文)</td><td>否</td><td>菜单的英文名称，如不填切换英文时则显示中文名称</td></tr><tr><td>菜单图片</td><td>是</td><td>菜单显示的图片，图片必须为PNG且小于1M</td></tr><tr><td>类型</td><td>是</td><td>1.VUE:vue应用，需开发vue应用地址填写vue路由<br>2.HTML:html页面，地址填写html地址<br>3.APP:详细见APP应用配置<br>4.MENU:二级菜单，可再配置下级菜单</td></tr><tr><td>地址</td><td>否</td><td>根据类型不同填写</td></tr><tr><td>角标</td><td>否</td><td>菜单右上角可显示数量，@Account参数为当前登录人</td></tr><tr><td>可见安全组</td><td>否</td><td>此类别哪些安全组可见，如不选择则都不可见，安全组来源于BPM安全组，新增和编辑请到BPM修改</td></tr><tr><td>排序</td><td>是</td><td>分类显示的顺序</td></tr></tbody></table><h4 id="APP应用"><a href="#APP应用" class="headerlink" title="APP应用"></a>APP应用</h4><img src="/2020/03/25/bpmapp/image/14.png" width="100%" height="800" alt="APP应用" align="center"><p><code>使用说明</code><br>1.选择表单服务<br>2.选择字段：显示表单服务中所用到的所有表，但目前只可以选择一张表作为应用列表<br><img src="/2020/03/25/bpmapp/image/15.png" width="100%" height="400" alt="选择字段" align="center"></p><p>3.字段配置：对选择的字段进行配置，中文名，英文名，是否显示，格式化（可写css样式）<br><img src="/2020/03/25/bpmapp/image/16.png" width="100%" height="400" alt="字段配置" align="center"><br>4.选择事件：查看、新增、编辑、删除、搜索、排序的配置<br><img src="/2020/03/25/bpmapp/image/17.png" width="100%" height="400" alt="选择事件" align="center"></p><h2 id="后台管理源码说明"><a href="#后台管理源码说明" class="headerlink" title="后台管理源码说明"></a>后台管理源码说明</h2><p>1.框架:vue+element<br><img src="/2020/03/25/bpmapp/image/18.png" width="100%" height="400" align="center"></p><p>2.目录结构：后续详细介绍</p><h2 id="WEBAPP源码说明"><a href="#WEBAPP源码说明" class="headerlink" title="WEBAPP源码说明"></a>WEBAPP源码说明</h2><p>1.框架:vue+vant</p><img src="/2020/03/25/bpmapp/image/19.png" width="100%" height="400" align="center"><p>2.目录结构：后续详细介绍</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> bpm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> html </tag>
+            
+            <tag> vue </tag>
+            
+            <tag> .net </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>day20200324</title>
+      <link href="/2020/03/24/day324/"/>
+      <url>/2020/03/24/day324/</url>
+      
+        <content type="html"><![CDATA[<h1 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h1><pre class=" language-日常"><code class="language-日常">    1.问题：vue app中表单调用jssdk问题      原因: ifrmae中无法使用jssdk      解决方法：将jssdk方法写在vue页面，挂在到window上，ifrmae中使用parent.$wx进行调用</code></pre><hr><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><pre><code>1.搭建hexo博客 http://www.linxueyang.cn</code></pre><h1 id="有感"><a href="#有感" class="headerlink" title="有感"></a>有感</h1><pre><code> 早就想搭建自己的博客网站，今天无意中看到hexo框架，感觉很方便，今天费了点时间，希望以后可以多写写博客。</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> diary </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> share </tag>
+            
+            <tag> diary </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo搭建过程</title>
+      <link href="/2020/03/24/first/"/>
+      <url>/2020/03/24/first/</url>
+      
+        <content type="html"><![CDATA[<img src="/2020/03/24/first/logo.jpg" width="200" height="200" align="center"><h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><h2 id="node"><a href="#node" class="headerlink" title="node"></a>node</h2><p>下载node并安装</p><pre class=" language-bash"><code class="language-bash">https://nodejs.org/zh-cn/</code></pre><h2 id="下载git"><a href="#下载git" class="headerlink" title="下载git"></a>下载git</h2><p>下载git并安装(下载很慢，建议翻墙或者到云服务器下载)</p><pre class=" language-bash"><code class="language-bash">https://git-scm.com/downloads</code></pre><h3 id="SSH配置"><a href="#SSH配置" class="headerlink" title="SSH配置"></a>SSH配置</h3><blockquote><ol><li>打开git bash</li><li>使用cd ~/.ssh可以查看是否已配置SSH。</li><li>执行生成公钥和私钥的命令ssh-keygen -t rsa 并按回车3下（为什么按三下，是因为有提示你是否需要设置密码，如果设置了每次使用Git都会用到密码，一般都是直接不写为空，直接回车就好了）。会在一个文件夹里面生成一个私钥 id_rsa和一个公钥id_rsa.pub。（可执行start ~命令，生成的公私钥在 .ssh的文件夹里面）。</li><li>.ssh如果不做特殊处理的话，一般是在C:\Users\Administrator目录下。如果看不到.ssh文件，可以使用ls -ah指令查看隐藏文件夹即可，这是存放秘钥的文件，打开这个文件会看到id_rsa和id_rsa.pub。id_rsa是私钥文件，id_rsa.pub是公钥文件。</li><li>登陆你的github帐户。点击你的头像，然后 Settings -&gt; 左栏点击 SSH and GPG keys -&gt; 点击 New SSH key新建公钥title可以随便输key就是你刚刚新建的公钥</li><li>可以测试下：ssh <a href="mailto:git@github.com">git@github.com</a>如果输出Hi xxx! You’ve successfully authenticated, but GitHub does not # provide shell access. Connection to github.com closed.说明成功了</li></ol></blockquote><h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><ul><li>安装Hexo<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli</code></pre></li><li>初始化<pre class=" language-bash"><code class="language-bash">hexo init</code></pre></li><li>本地运行<pre class=" language-bash"><code class="language-bash">hexo ghexo server</code></pre></li><li>安装deploy-git部署命令<pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save</code></pre></li><li>推送到远程<pre class=" language-bash"><code class="language-bash">hexo cleanhexo ghexo d</code></pre><h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h2></li></ul><blockquote><ol><li>登录个人github。</li><li>创建repository   Repository name为 个人账号名称如：<code>linxueyang.github.io</code></li><li>修改 <code>_config.yml</code> 文件 </li></ol></blockquote><pre class=" language-yaml"><code class="language-yaml"><span class="token key atrule">deploy</span><span class="token punctuation">:</span>   <span class="token key atrule">type</span><span class="token punctuation">:</span> git   <span class="token key atrule">repo</span><span class="token punctuation">:</span> git@github.com<span class="token punctuation">:</span>linxueyang/linxueyang.github.io.git  <span class="token comment" spellcheck="true">#ssh方式</span>   <span class="token key atrule">branch</span><span class="token punctuation">:</span> master</code></pre><blockquote><ol start="4"><li>建立bat文件快速执行推送，在hexo目录下修改package.json，新增  <code>&quot;start&quot;: &quot;hexo clean &amp; hexo deploy&quot;</code> ,新建bat文件：<code>npm run start</code></li><li>域名映射：将域名映射到github,打开域名解析，添加记录，记录类型选CHAME，值填写githubpage地址如：<code>linxeuyang.github.io</code></li><li>打开github GitHub Pages选项将域名填入，github将自动生成CHAME文件，如果每次推送会把CHAME覆盖，则将CHAME拷贝到hexo的source目录下</li></ol></blockquote><h2 id="部署到个人服务器"><a href="#部署到个人服务器" class="headerlink" title="部署到个人服务器"></a>部署到个人服务器</h2><p>将文件夹public下的静态文件部署到服务器则可以</p><h1 id="hexo主题"><a href="#hexo主题" class="headerlink" title="hexo主题"></a>hexo主题</h1><h2 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/blinkfox/hexo-theme-matery.git</code></pre><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="切换主题"><a href="#切换主题" class="headerlink" title="切换主题"></a>切换主题</h3><p>修改 Hexo 根目录下的 <code>_config.yml</code> 的  <code>theme</code> 的值：<code>theme: hexo-theme-matery</code></p><h4 id="config-yml-文件的其它修改建议"><a href="#config-yml-文件的其它修改建议" class="headerlink" title="_config.yml 文件的其它修改建议:"></a><code>_config.yml</code> 文件的其它修改建议:</h4><ul><li>请修改 <code>_config.yml</code> 的 <code>url</code> 的值为你的网站主 <code>URL</code>（如：<code>http://xxx.github.io</code>）。</li><li>建议修改两个 <code>per_page</code> 的分页条数值为 <code>6</code> 的倍数，如：<code>12</code>、<code>18</code> 等，这样文章列表在各个屏幕下都能较好的显示。</li><li>如果你是中文用户，则建议修改 <code>language</code> 的值为 <code>zh-CN</code>。</li></ul><h3 id="新建分类-categories-页"><a href="#新建分类-categories-页" class="headerlink" title="新建分类 categories 页"></a>新建分类 categories 页</h3><p><code>categories</code> 页是用来展示所有分类的页面，如果在你的博客 <code>source</code> 目录下还没有 <code>categories/index.md</code> 文件，那么你就需要新建一个，命令如下：</p><pre class=" language-bash"><code class="language-bash">hexo new page <span class="token string">"categories"</span></code></pre><p>编辑你刚刚新建的页面文件 <code>/source/categories/index.md</code>，至少需要以下内容：</p><pre class=" language-yaml"><code class="language-yaml"><span class="token punctuation">---</span><span class="token key atrule">title</span><span class="token punctuation">:</span> categories<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2018-09-30 17:25:30</span><span class="token key atrule">type</span><span class="token punctuation">:</span> <span class="token string">"categories"</span><span class="token key atrule">layout</span><span class="token punctuation">:</span> <span class="token string">"categories"</span><span class="token punctuation">---</span></code></pre><h3 id="新建标签-tags-页"><a href="#新建标签-tags-页" class="headerlink" title="新建标签 tags 页"></a>新建标签 tags 页</h3><p><code>tags</code> 页是用来展示所有标签的页面，如果在你的博客 <code>source</code> 目录下还没有 <code>tags/index.md</code> 文件，那么你就需要新建一个，命令如下：</p><pre class=" language-bash"><code class="language-bash">hexo new page <span class="token string">"tags"</span></code></pre><p>编辑你刚刚新建的页面文件 <code>/source/tags/index.md</code>，至少需要以下内容：</p><pre class=" language-yaml"><code class="language-yaml"><span class="token punctuation">---</span><span class="token key atrule">title</span><span class="token punctuation">:</span> tags<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2018-09-30 18:23:38</span><span class="token key atrule">type</span><span class="token punctuation">:</span> <span class="token string">"tags"</span><span class="token key atrule">layout</span><span class="token punctuation">:</span> <span class="token string">"tags"</span><span class="token punctuation">---</span></code></pre><h3 id="新建关于我-about-页"><a href="#新建关于我-about-页" class="headerlink" title="新建关于我 about 页"></a>新建关于我 about 页</h3><p><code>about</code> 页是用来展示<strong>关于我和我的博客</strong>信息的页面，如果在你的博客 <code>source</code> 目录下还没有 <code>about/index.md</code> 文件，那么你就需要新建一个，命令如下：</p><pre class=" language-bash"><code class="language-bash">hexo new page <span class="token string">"about"</span></code></pre><p>编辑你刚刚新建的页面文件 <code>/source/about/index.md</code>，至少需要以下内容：</p><pre class=" language-yaml"><code class="language-yaml"><span class="token punctuation">---</span><span class="token key atrule">title</span><span class="token punctuation">:</span> about<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2018-09-30 17:25:30</span><span class="token key atrule">type</span><span class="token punctuation">:</span> <span class="token string">"about"</span><span class="token key atrule">layout</span><span class="token punctuation">:</span> <span class="token string">"about"</span><span class="token punctuation">---</span></code></pre><h3 id="新建留言板-contact-页（可选的）"><a href="#新建留言板-contact-页（可选的）" class="headerlink" title="新建留言板 contact 页（可选的）"></a>新建留言板 contact 页（可选的）</h3><p><code>contact</code> 页是用来展示<strong>留言板</strong>信息的页面，如果在你的博客 <code>source</code> 目录下还没有 <code>contact/index.md</code> 文件，那么你就需要新建一个，命令如下：</p><pre class=" language-bash"><code class="language-bash">hexo new page <span class="token string">"contact"</span></code></pre><p>编辑你刚刚新建的页面文件 <code>/source/contact/index.md</code>，至少需要以下内容：</p><pre class=" language-yaml"><code class="language-yaml"><span class="token punctuation">---</span><span class="token key atrule">title</span><span class="token punctuation">:</span> contact<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2018-09-30 17:25:30</span><span class="token key atrule">type</span><span class="token punctuation">:</span> <span class="token string">"contact"</span><span class="token key atrule">layout</span><span class="token punctuation">:</span> <span class="token string">"contact"</span><span class="token punctuation">---</span></code></pre><blockquote><p><strong>注</strong>：本留言板功能依赖于第三方评论系统，请<strong>激活</strong>你的评论系统才有效果。并且在主题的 <code>_config.yml</code> 文件中，第 <code>19</code> 至 <code>21</code> 行的“<strong>菜单</strong>”配置，取消关于留言板的注释即可。</p></blockquote><h3 id="新建友情链接-friends-页（可选的）"><a href="#新建友情链接-friends-页（可选的）" class="headerlink" title="新建友情链接 friends 页（可选的）"></a>新建友情链接 friends 页（可选的）</h3><p><code>friends</code> 页是用来展示<strong>友情链接</strong>信息的页面，如果在你的博客 <code>source</code> 目录下还没有 <code>friends/index.md</code> 文件，那么你就需要新建一个，命令如下：</p><pre class=" language-bash"><code class="language-bash">hexo new page <span class="token string">"friends"</span></code></pre><p>编辑你刚刚新建的页面文件 <code>/source/friends/index.md</code>，至少需要以下内容：</p><pre class=" language-yaml"><code class="language-yaml"><span class="token punctuation">---</span><span class="token key atrule">title</span><span class="token punctuation">:</span> friends<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2018-12-12 21:25:30</span><span class="token key atrule">type</span><span class="token punctuation">:</span> <span class="token string">"friends"</span><span class="token key atrule">layout</span><span class="token punctuation">:</span> <span class="token string">"friends"</span><span class="token punctuation">---</span></code></pre><p>同时，在你的博客 <code>source</code> 目录下新建 <code>_data</code> 目录，在 <code>_data</code> 目录中新建 <code>friends.json</code> 文件，文件内容如下所示：</p><pre class=" language-json"><code class="language-json"><span class="token punctuation">[</span><span class="token punctuation">{</span>    <span class="token property">"avatar"</span><span class="token operator">:</span> <span class="token string">"http://image.luokangyuan.com/1_qq_27922023.jpg"</span><span class="token punctuation">,</span>    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"码酱"</span><span class="token punctuation">,</span>    <span class="token property">"introduction"</span><span class="token operator">:</span> <span class="token string">"我不是大佬，只是在追寻大佬的脚步"</span><span class="token punctuation">,</span>    <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"http://luokangyuan.com/"</span><span class="token punctuation">,</span>    <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"前去学习"</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>    <span class="token property">"avatar"</span><span class="token operator">:</span> <span class="token string">"http://image.luokangyuan.com/4027734.jpeg"</span><span class="token punctuation">,</span>    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"闪烁之狐"</span><span class="token punctuation">,</span>    <span class="token property">"introduction"</span><span class="token operator">:</span> <span class="token string">"编程界大佬，技术牛，人还特别好，不懂的都可以请教大佬"</span><span class="token punctuation">,</span>    <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"https://blinkfox.github.io/"</span><span class="token punctuation">,</span>    <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"前去学习"</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>    <span class="token property">"avatar"</span><span class="token operator">:</span> <span class="token string">"http://image.luokangyuan.com/avatar.jpg"</span><span class="token punctuation">,</span>    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"ja_rome"</span><span class="token punctuation">,</span>    <span class="token property">"introduction"</span><span class="token operator">:</span> <span class="token string">"平凡的脚步也可以走出伟大的行程"</span><span class="token punctuation">,</span>    <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"https://me.csdn.net/jlh912008548"</span><span class="token punctuation">,</span>    <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"前去学习"</span><span class="token punctuation">}</span><span class="token punctuation">]</span></code></pre><h3 id="菜单导航配置"><a href="#菜单导航配置" class="headerlink" title="菜单导航配置"></a>菜单导航配置</h3><h4 id="配置基本菜单导航的名称、路径url和图标icon"><a href="#配置基本菜单导航的名称、路径url和图标icon" class="headerlink" title="配置基本菜单导航的名称、路径url和图标icon."></a>配置基本菜单导航的名称、路径url和图标icon.</h4><p>1.菜单导航名称可以是中文也可以是英文(如：<code>Index</code>或<code>主页</code>)<br>2.图标icon 可以在<a href="https://fontawesome.com/icons" target="_blank" rel="noopener">Font Awesome</a> 中查找   </p><pre class=" language-yaml"><code class="language-yaml"><span class="token key atrule">menu</span><span class="token punctuation">:</span>  <span class="token key atrule">Index</span><span class="token punctuation">:</span>    <span class="token key atrule">url</span><span class="token punctuation">:</span> /    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>home  <span class="token key atrule">Tags</span><span class="token punctuation">:</span>    <span class="token key atrule">url</span><span class="token punctuation">:</span> /tags    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>tags  <span class="token key atrule">Categories</span><span class="token punctuation">:</span>    <span class="token key atrule">url</span><span class="token punctuation">:</span> /categories    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>bookmark  <span class="token key atrule">Archives</span><span class="token punctuation">:</span>    <span class="token key atrule">url</span><span class="token punctuation">:</span> /archives    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>archive  <span class="token key atrule">About</span><span class="token punctuation">:</span>    <span class="token key atrule">url</span><span class="token punctuation">:</span> /about    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>user<span class="token punctuation">-</span>circle  <span class="token key atrule">Friends</span><span class="token punctuation">:</span>    <span class="token key atrule">url</span><span class="token punctuation">:</span> /friends    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>address<span class="token punctuation">-</span>book</code></pre><h4 id="二级菜单配置方法"><a href="#二级菜单配置方法" class="headerlink" title="二级菜单配置方法"></a>二级菜单配置方法</h4><p>如果你需要二级菜单则可以在原基本菜单导航的基础上如下操作<br>1.在需要添加二级菜单的一级菜单下添加<code>children</code>关键字(如:<code>About</code>菜单下添加<code>children</code>)<br>2.在<code>children</code>下创建二级菜单的 名称name,路径url和图标icon.<br>3.注意每个二级菜单模块前要加 <code>-</code>.<br>4.注意缩进格式  </p><pre class=" language-yaml"><code class="language-yaml"><span class="token key atrule">menu</span><span class="token punctuation">:</span>  <span class="token key atrule">Index</span><span class="token punctuation">:</span>    <span class="token key atrule">url</span><span class="token punctuation">:</span> /    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>home  <span class="token key atrule">Tags</span><span class="token punctuation">:</span>    <span class="token key atrule">url</span><span class="token punctuation">:</span> /tags    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>tags  <span class="token key atrule">Categories</span><span class="token punctuation">:</span>    <span class="token key atrule">url</span><span class="token punctuation">:</span> /categories    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>bookmark  <span class="token key atrule">Archives</span><span class="token punctuation">:</span>    <span class="token key atrule">url</span><span class="token punctuation">:</span> /archives    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>archive  <span class="token key atrule">About</span><span class="token punctuation">:</span>    <span class="token key atrule">url</span><span class="token punctuation">:</span> /about    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>user<span class="token punctuation">-</span>circle<span class="token punctuation">-</span>o  <span class="token key atrule">Friends</span><span class="token punctuation">:</span>    <span class="token key atrule">url</span><span class="token punctuation">:</span> /friends    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>address<span class="token punctuation">-</span>book  <span class="token key atrule">Medias</span><span class="token punctuation">:</span>    <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>list    <span class="token key atrule">children</span><span class="token punctuation">:</span>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Musics        <span class="token key atrule">url</span><span class="token punctuation">:</span> /musics        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>music      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Movies        <span class="token key atrule">url</span><span class="token punctuation">:</span> /movies        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>film      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Books        <span class="token key atrule">url</span><span class="token punctuation">:</span> /books        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>book      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Galleries        <span class="token key atrule">url</span><span class="token punctuation">:</span> /galleries        <span class="token key atrule">icon</span><span class="token punctuation">:</span> fas fa<span class="token punctuation">-</span>image</code></pre><p>执行 <code>hexo clean &amp;&amp; hexo g</code> 重新生成博客文件，然后就可以在文章中对应位置看到你用<code>emoji</code>语法写的表情了。</p><h3 id="代码高亮"><a href="#代码高亮" class="headerlink" title="代码高亮"></a>代码高亮</h3><p>由于 Hexo 自带的代码高亮主题显示不好看，所以主题中使用到了 <a href="https://github.com/ele828/hexo-prism-plugin" target="_blank" rel="noopener">hexo-prism-plugin</a> 的 Hexo 插件来做代码高亮，安装命令如下：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> i -S hexo-prism-plugin</code></pre><p>然后，修改 Hexo 根目录下 <code>_config.yml</code> 文件中 <code>highlight.enable</code> 的值为 <code>false</code>，并新增 <code>prism</code> 插件相关的配置，主要配置如下：</p><pre class=" language-yaml"><code class="language-yaml"><span class="token key atrule">highlight</span><span class="token punctuation">:</span>  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span><span class="token key atrule">prism_plugin</span><span class="token punctuation">:</span>  <span class="token key atrule">mode</span><span class="token punctuation">:</span> <span class="token string">'preprocess'</span>    <span class="token comment" spellcheck="true"># realtime/preprocess</span>  <span class="token key atrule">theme</span><span class="token punctuation">:</span> <span class="token string">'tomorrow'</span>  <span class="token key atrule">line_number</span><span class="token punctuation">:</span> <span class="token boolean important">false    </span><span class="token comment" spellcheck="true"># default false</span>  custom_css<span class="token punctuation">:</span></code></pre><h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><p>本主题中还使用到了 <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-search</a> 的 Hexo 插件来做内容搜索，安装命令如下：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-generator-search --save</code></pre><p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p><pre class=" language-yaml"><code class="language-yaml"><span class="token key atrule">search</span><span class="token punctuation">:</span>  <span class="token key atrule">path</span><span class="token punctuation">:</span> search.xml  <span class="token key atrule">field</span><span class="token punctuation">:</span> post</code></pre><h3 id="中文链接转拼音（建议安装）"><a href="#中文链接转拼音（建议安装）" class="headerlink" title="中文链接转拼音（建议安装）"></a>中文链接转拼音（建议安装）</h3><p>如果你的文章名称是中文的，那么 Hexo 默认生成的永久链接也会有中文，这样不利于 <code>SEO</code>，且 <code>gitment</code> 评论对中文链接也不支持。我们可以用 <a href="https://github.com/viko16/hexo-permalink-pinyin" target="_blank" rel="noopener">hexo-permalink-pinyin</a> Hexo 插件使在生成文章时生成中文拼音的永久链接。</p><p>安装命令如下：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> i hexo-permalink-pinyin --save</code></pre><p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p><pre class=" language-yaml"><code class="language-yaml"><span class="token key atrule">permalink_pinyin</span><span class="token punctuation">:</span>  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>  <span class="token key atrule">separator</span><span class="token punctuation">:</span> <span class="token string">'-'</span> <span class="token comment" spellcheck="true"># default: '-'</span></code></pre><blockquote><p><strong>注</strong>：除了此插件外，<a href="https://github.com/rozbo/hexo-abbrlink" target="_blank" rel="noopener">hexo-abbrlink</a> 插件也可以生成非中文的链接。</p></blockquote><h3 id="文章字数统计插件（建议安装）"><a href="#文章字数统计插件（建议安装）" class="headerlink" title="文章字数统计插件（建议安装）"></a>文章字数统计插件（建议安装）</h3><p>如果你想要在文章中显示文章字数、阅读时长信息，可以安装 <a href="https://github.com/willin/hexo-wordcount" target="_blank" rel="noopener">hexo-wordcount</a>插件。</p><p>安装命令如下：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> i --save hexo-wordcount</code></pre><p>然后只需在本主题下的 <code>_config.yml</code> 文件中，将各个文章字数相关的配置激活即可：</p><pre class=" language-yaml"><code class="language-yaml"><span class="token key atrule">postInfo</span><span class="token punctuation">:</span>  <span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>  <span class="token key atrule">update</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>  <span class="token key atrule">wordCount</span><span class="token punctuation">:</span> <span class="token boolean important">false </span><span class="token comment" spellcheck="true"># 设置文章字数统计为 true.</span>  <span class="token key atrule">totalCount</span><span class="token punctuation">:</span> <span class="token boolean important">false </span><span class="token comment" spellcheck="true"># 设置站点文章总字数统计为 true.</span>  <span class="token key atrule">min2read</span><span class="token punctuation">:</span> <span class="token boolean important">false </span><span class="token comment" spellcheck="true"># 阅读时长.</span>  <span class="token key atrule">readCount</span><span class="token punctuation">:</span> <span class="token boolean important">false </span><span class="token comment" spellcheck="true"># 阅读次数.</span></code></pre><h3 id="添加emoji表情支持（可选的）"><a href="#添加emoji表情支持（可选的）" class="headerlink" title="添加emoji表情支持（可选的）"></a>添加emoji表情支持（可选的）</h3><p>本主题新增了对<code>emoji</code>表情的支持，使用到了 <a href="https://npm.taobao.org/package/hexo-filter-github-emojis" target="_blank" rel="noopener">hexo-filter-github-emojis</a> 的 Hexo 插件来支持 <code>emoji</code>表情的生成，把对应的<code>markdown emoji</code>语法（<code>::</code>,例如：<code>:smile:</code>）转变成会跳跃的<code>emoji</code>表情，安装命令如下：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-filter-github-emojis --save</code></pre><p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p><pre class=" language-yaml"><code class="language-yaml"><span class="token key atrule">githubEmojis</span><span class="token punctuation">:</span>  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>  <span class="token key atrule">className</span><span class="token punctuation">:</span> github<span class="token punctuation">-</span>emoji  <span class="token key atrule">inject</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>  <span class="token key atrule">styles</span><span class="token punctuation">:</span>  customEmojis<span class="token punctuation">:</span></code></pre><h3 id="添加-RSS-订阅支持（可选的）"><a href="#添加-RSS-订阅支持（可选的）" class="headerlink" title="添加 RSS 订阅支持（可选的）"></a>添加 RSS 订阅支持（可选的）</h3><p>本主题中还使用到了 <a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="noopener">hexo-generator-feed</a> 的 Hexo 插件来做 <code>RSS</code>，安装命令如下：</p><pre class=" language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-generator-feed --save</code></pre><p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p><pre class=" language-yaml"><code class="language-yaml"><span class="token key atrule">feed</span><span class="token punctuation">:</span>  <span class="token key atrule">type</span><span class="token punctuation">:</span> atom  <span class="token key atrule">path</span><span class="token punctuation">:</span> atom.xml  <span class="token key atrule">limit</span><span class="token punctuation">:</span> <span class="token number">20</span>  <span class="token key atrule">hub</span><span class="token punctuation">:</span>  <span class="token key atrule">content</span><span class="token punctuation">:</span>  <span class="token key atrule">content_limit</span><span class="token punctuation">:</span> <span class="token number">140</span>  <span class="token key atrule">content_limit_delim</span><span class="token punctuation">:</span> <span class="token string">' '</span>  <span class="token key atrule">order_by</span><span class="token punctuation">:</span> <span class="token punctuation">-</span>date</code></pre><p>执行 <code>hexo clean &amp;&amp; hexo g</code> 重新生成博客文件，然后在 <code>public</code> 文件夹中即可看到 <code>atom.xml</code> 文件，说明你已经安装成功了。</p><h3 id="添加-DaoVoice-在线聊天功能（可选的）"><a href="#添加-DaoVoice-在线聊天功能（可选的）" class="headerlink" title="添加 DaoVoice 在线聊天功能（可选的）"></a>添加 <a href="http://www.daovoice.io/" target="_blank" rel="noopener">DaoVoice</a> 在线聊天功能（可选的）</h3><p>前往 <a href="http://www.daovoice.io/" target="_blank" rel="noopener">DaoVoice</a> 官网注册并且获取 <code>app_id</code>，并将 <code>app_id</code> 填入主题的 <code>_config.yml</code> 文件中。</p><h3 id="添加-Tidio-在线聊天功能（可选的）"><a href="#添加-Tidio-在线聊天功能（可选的）" class="headerlink" title="添加 Tidio 在线聊天功能（可选的）"></a>添加 <a href="https://www.tidio.com/" target="_blank" rel="noopener">Tidio</a> 在线聊天功能（可选的）</h3><p>前往 <a href="https://www.tidio.com/" target="_blank" rel="noopener">Tidio</a> 官网注册并且获取 <code>Public Key</code>，并将 <code>Public Key</code> 填入主题的 <code>_config.yml</code> 文件中。</p><h3 id="修改页脚"><a href="#修改页脚" class="headerlink" title="修改页脚"></a>修改页脚</h3><p>页脚信息可能需要做定制化修改，而且它不便于做成配置信息，所以可能需要你自己去再修改和加工。修改的地方在主题文件的 <code>/layout/_partial/footer.ejs</code> 文件中，包括站点、使用的主题、访问量等。</p><h3 id="修改社交链接"><a href="#修改社交链接" class="headerlink" title="修改社交链接"></a>修改社交链接</h3><p>在主题的 <code>_config.yml</code> 文件中，默认支持 <code>QQ</code>、<code>GitHub</code> 和邮箱等的配置，你可以在主题文件的 <code>/layout/_partial/social-link.ejs</code> 文件中，新增、修改你需要的社交链接地址，增加链接可参考如下代码：</p><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%</span> <span class="token attr-name">if</span> <span class="token attr-name">(theme.socialLink.github)</span> <span class="token attr-name">{</span> <span class="token attr-name">%</span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>&lt;%<span class="token punctuation">=</span> theme.socialLink.github %<span class="token punctuation">></span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tooltipped<span class="token punctuation">"</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>_blank<span class="token punctuation">"</span></span> <span class="token attr-name">data-tooltip</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>访问我的GitHub<span class="token punctuation">"</span></span> <span class="token attr-name">data-position</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>top<span class="token punctuation">"</span></span> <span class="token attr-name">data-delay</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>fab fa-github<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%</span> <span class="token attr-name">}</span> <span class="token attr-name">%</span><span class="token punctuation">></span></span></code></pre><p>其中，社交图标（如：<code>fa-github</code>）你可以在 <a href="https://fontawesome.com/icons" target="_blank" rel="noopener">Font Awesome</a> 中搜索找到。以下是常用社交图标的标识，供你参考：</p><ul><li>Facebook: <code>fab fa-facebook</code></li><li>Twitter: <code>fab fa-twitter</code></li><li>Google-plus: <code>fab fa-google-plus</code></li><li>Linkedin: <code>fab fa-linkedin</code></li><li>Tumblr: <code>fab fa-tumblr</code></li><li>Medium: <code>fab fa-medium</code></li><li>Slack: <code>fab fa-slack</code></li><li>Sina Weibo: <code>fab fa-weibo</code></li><li>Wechat: <code>fab fa-weixin</code></li><li>QQ: <code>fab fa-qq</code></li><li>Zhihu: <code>fab fa-zhihu</code></li></ul><blockquote><p><strong>注意</strong>: 本主题中使用的 <code>Font Awesome</code> 版本为 <code>5.11.0</code>。</p></blockquote><h3 id="修改打赏的二维码图片"><a href="#修改打赏的二维码图片" class="headerlink" title="修改打赏的二维码图片"></a>修改打赏的二维码图片</h3><p>在主题文件的 <code>source/medias/reward</code> 文件中，你可以替换成你的的微信和支付宝的打赏二维码图片。</p><h3 id="配置音乐播放器（可选的）"><a href="#配置音乐播放器（可选的）" class="headerlink" title="配置音乐播放器（可选的）"></a>配置音乐播放器（可选的）</h3><p>要支持音乐播放，在主题的 <code>_config.yml</code> 配置文件中激活music配置即可：</p><pre class=" language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># 是否在首页显示音乐</span><span class="token key atrule">music</span><span class="token punctuation">:</span>  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>  <span class="token key atrule">title</span><span class="token punctuation">:</span>             <span class="token comment" spellcheck="true">#非吸底模式有效</span>    <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>    <span class="token key atrule">show</span><span class="token punctuation">:</span> 听听音乐  <span class="token key atrule">server</span><span class="token punctuation">:</span> netease   <span class="token comment" spellcheck="true">#require music platform: netease, tencent, kugou, xiami, baidu</span>  <span class="token key atrule">type</span><span class="token punctuation">:</span> playlist    <span class="token comment" spellcheck="true">#require song, playlist, album, search, artist</span>  <span class="token key atrule">id</span><span class="token punctuation">:</span> <span class="token number">503838841     </span><span class="token comment" spellcheck="true">#require song id / playlist id / album id / search keyword</span>  <span class="token key atrule">fixed</span><span class="token punctuation">:</span> <span class="token boolean important">false      </span><span class="token comment" spellcheck="true"># 开启吸底模式</span>  <span class="token key atrule">autoplay</span><span class="token punctuation">:</span> <span class="token boolean important">false   </span><span class="token comment" spellcheck="true"># 是否自动播放</span>  <span class="token key atrule">theme</span><span class="token punctuation">:</span> '<span class="token comment" spellcheck="true">#42b983'</span>  <span class="token key atrule">loop</span><span class="token punctuation">:</span> <span class="token string">'all'</span>       <span class="token comment" spellcheck="true"># 音频循环播放, 可选值: 'all', 'one', 'none'</span>  <span class="token key atrule">order</span><span class="token punctuation">:</span> <span class="token string">'random'</span>   <span class="token comment" spellcheck="true"># 音频循环顺序, 可选值: 'list', 'random'</span>  <span class="token key atrule">preload</span><span class="token punctuation">:</span> <span class="token string">'auto'</span>   <span class="token comment" spellcheck="true"># 预加载，可选值: 'none', 'metadata', 'auto'</span>  <span class="token key atrule">volume</span><span class="token punctuation">:</span> <span class="token number">0.7       </span><span class="token comment" spellcheck="true"># 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效</span>  <span class="token key atrule">listFolded</span><span class="token punctuation">:</span> <span class="token boolean important">true  </span><span class="token comment" spellcheck="true"># 列表默认折叠</span></code></pre><blockquote><p><code>server</code>可选<code>netease</code>（网易云音乐），<code>tencent</code>（QQ音乐），<code>kugou</code>（酷狗音乐），<code>xiami</code>（虾米音乐），</p><p><code>baidu</code>（百度音乐）。</p><p><code>type</code>可选<code>song</code>（歌曲），<code>playlist</code>（歌单），<code>album</code>（专辑），<code>search</code>（搜索关键字），<code>artist</code>（歌手）</p><p><code>id</code>获取示例: 浏览器打开网易云音乐，点击我喜欢的音乐歌单，地址栏有一串数字，<code>playlist</code>的<code>id</code>即为这串数字。</p></blockquote><h2 id="文章-Front-matter-介绍"><a href="#文章-Front-matter-介绍" class="headerlink" title="文章 Front-matter 介绍"></a>文章 Front-matter 介绍</h2><h3 id="Front-matter-选项详解"><a href="#Front-matter-选项详解" class="headerlink" title="Front-matter 选项详解"></a>Front-matter 选项详解</h3><p><code>Front-matter</code> 选项中的所有内容均为<strong>非必填</strong>的。但我仍然建议至少填写 <code>title</code> 和 <code>date</code> 的值。</p><table><thead><tr><th>配置选项</th><th>默认值</th><th>描述</th></tr></thead><tbody><tr><td>title</td><td><code>Markdown</code> 的文件标题</td><td>文章标题，强烈建议填写此选项</td></tr><tr><td>date</td><td>文件创建时的日期时间</td><td>发布时间，强烈建议填写此选项，且最好保证全局唯一</td></tr><tr><td>author</td><td>根 <code>_config.yml</code> 中的 <code>author</code></td><td>文章作者</td></tr><tr><td>img</td><td><code>featureImages</code> 中的某个值</td><td>文章特征图，推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如: <code>http://xxx.com/xxx.jpg</code></td></tr><tr><td>top</td><td><code>true</code></td><td>推荐文章（文章是否置顶），如果 <code>top</code> 值为 <code>true</code>，则会作为首页推荐文章</td></tr><tr><td>cover</td><td><code>false</code></td><td><code>v1.0.2</code>版本新增，表示该文章是否需要加入到首页轮播封面中</td></tr><tr><td>coverImg</td><td>无</td><td><code>v1.0.2</code>版本新增，表示该文章在首页轮播封面需要显示的图片路径，如果没有，则默认使用文章的特色图片</td></tr><tr><td>password</td><td>无</td><td>文章阅读密码，如果要对文章设置阅读验证密码的话，就可以设置 <code>password</code> 的值，该值必须是用 <code>SHA256</code> 加密后的密码，防止被他人识破。前提是在主题的 <code>config.yml</code> 中激活了 <code>verifyPassword</code> 选项</td></tr><tr><td>toc</td><td><code>true</code></td><td>是否开启 TOC，可以针对某篇文章单独关闭 TOC 的功能。前提是在主题的 <code>config.yml</code> 中激活了 <code>toc</code> 选项</td></tr><tr><td>mathjax</td><td><code>false</code></td><td>是否开启数学公式支持 ，本文章是否开启 <code>mathjax</code>，且需要在主题的 <code>_config.yml</code> 文件中也需要开启才行</td></tr><tr><td>summary</td><td>无</td><td>文章摘要，自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要</td></tr><tr><td>categories</td><td>无</td><td>文章分类，本主题的分类表示宏观上大的分类，只建议一篇文章一个分类</td></tr><tr><td>tags</td><td>无</td><td>文章标签，一篇文章可以多个标签</td></tr><tr><td>keywords</td><td>文章标题</td><td>文章关键字，SEO 时需要</td></tr><tr><td>reprintPolicy</td><td>cc_by</td><td>文章转载规则， 可以是 cc_by, cc_by_nd, cc_by_sa, cc_by_nc, cc_by_nc_nd, cc_by_nc_sa, cc0, noreprint 或 pay 中的一个</td></tr></tbody></table><blockquote><p><strong>注意</strong>:</p><ol><li>如果 <code>img</code> 属性不填写的话，文章特色图会根据文章标题的 <code>hashcode</code> 的值取余，然后选取主题中对应的特色图片，从而达到让所有文章都的特色图<strong>各有特色</strong>。</li><li><code>date</code> 的值尽量保证每篇文章是唯一的，因为本主题中 <code>Gitalk</code> 和 <code>Gitment</code> 识别 <code>id</code> 是通过 <code>date</code> 的值来作为唯一标识的。</li><li>如果要对文章设置阅读验证密码的功能，不仅要在 Front-matter 中设置采用了 SHA256 加密的 password 的值，还需要在主题的 <code>_config.yml</code> 中激活了配置。有些在线的 SHA256 加密的地址，可供你使用：<a href="http://tool.oschina.net/encrypt?type=2" target="_blank" rel="noopener">开源中国在线工具</a>、<a href="http://encode.chahuo.com/" target="_blank" rel="noopener">chahuo</a>、<a href="http://tool.chinaz.com/tools/hash.aspx" target="_blank" rel="noopener">站长工具</a>。</li><li>您可以在文章md文件的 front-matter 中指定 reprintPolicy 来给单个文章配置转载规则</li></ol></blockquote><p>以下为文章的 <code>Front-matter</code> 示例。</p><h3 id="最简示例"><a href="#最简示例" class="headerlink" title="最简示例"></a>最简示例</h3><pre class=" language-yaml"><code class="language-yaml"><span class="token punctuation">---</span><span class="token key atrule">title</span><span class="token punctuation">:</span> typora<span class="token punctuation">-</span>vue<span class="token punctuation">-</span>theme主题介绍<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2018-09-07 09:25:00</span><span class="token punctuation">---</span></code></pre><h3 id="最全示例"><a href="#最全示例" class="headerlink" title="最全示例"></a>最全示例</h3><pre class=" language-yaml"><code class="language-yaml"><span class="token punctuation">---</span><span class="token key atrule">title</span><span class="token punctuation">:</span> typora<span class="token punctuation">-</span>vue<span class="token punctuation">-</span>theme主题介绍<span class="token key atrule">date</span><span class="token punctuation">:</span> <span class="token datetime number">2018-09-07 09:25:00</span><span class="token key atrule">author</span><span class="token punctuation">:</span> 赵奇<span class="token key atrule">img</span><span class="token punctuation">:</span> /source/images/xxx.jpg<span class="token key atrule">top</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><span class="token key atrule">cover</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><span class="token key atrule">coverImg</span><span class="token punctuation">:</span> /images/1.jpg<span class="token key atrule">password</span><span class="token punctuation">:</span> 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92<span class="token key atrule">toc</span><span class="token punctuation">:</span> <span class="token boolean important">false</span><span class="token key atrule">mathjax</span><span class="token punctuation">:</span> <span class="token boolean important">false</span><span class="token key atrule">summary</span><span class="token punctuation">:</span> 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要<span class="token key atrule">categories</span><span class="token punctuation">:</span> Markdown<span class="token key atrule">tags</span><span class="token punctuation">:</span>  <span class="token punctuation">-</span> Typora  <span class="token punctuation">-</span> Markdown<span class="token punctuation">---</span></code></pre><h2 id="效果截图"><a href="#效果截图" class="headerlink" title="效果截图"></a>效果截图</h2><p><img src="http://static.blinkfox.com/matery-20181202-1.png" alt="首页"></p><p><img src="http://static.blinkfox.com/matery-20181202-2.png" alt="首页推荐文章"></p><p><img src="http://static.blinkfox.com/matery-20181202-3.png" alt="首页文章列表"></p><p><img src="http://static.blinkfox.com/matery-20181202-7.png" alt="首页文章列表"></p><p><img src="http://static.blinkfox.com/matery-20181202-8.png" alt="首页文章列表"></p><h2 id="自定制修改"><a href="#自定制修改" class="headerlink" title="自定制修改"></a>自定制修改</h2><p>在本主题的 <code>_config.yml</code> 中可以修改部分自定义信息，有以下几个部分：</p><ul><li>菜单</li><li>我的梦想</li><li>首页的音乐播放器和视频播放器配置</li><li>是否显示推荐文章名称和按钮配置</li><li><code>favicon</code> 和 <code>Logo</code></li><li>个人信息</li><li>TOC 目录</li><li>文章打赏信息</li><li>复制文章内容时追加版权信息</li><li>MathJax</li><li>文章字数统计、阅读时长</li><li>点击页面的’爱心’效果</li><li>我的项目</li><li>我的技能</li><li>我的相册</li><li><code>Gitalk</code>、<code>Gitment</code>、<code>Valine</code> 和 <code>disqus</code> 评论配置</li><li><a href="http://busuanzi.ibruce.info/" target="_blank" rel="noopener">不蒜子统计</a>和谷歌分析（<code>Google Analytics</code>）</li><li>默认特色图的集合。当文章没有设置特色图时，本主题会根据文章标题的 <code>hashcode</code> 值取余，来选择展示对应的特色图</li></ul><p><strong>我认为个人博客应该都有自己的风格和特色</strong>。如果本主题中的诸多功能和主题色彩你不满意，可以在主题中自定义修改，很多更自由的功能和细节点的修改难以在主题的 <code>_config.yml</code> 中完成，需要修改源代码才来完成。以下列出了可能对你有用的地方：</p><h3 id="修改主题颜色"><a href="#修改主题颜色" class="headerlink" title="修改主题颜色"></a>修改主题颜色</h3><p>在主题文件的 <code>/source/css/matery.css</code> 文件中，搜索 <code>.bg-color</code> 来修改背景颜色：</p><pre class=" language-css"><code class="language-css"><span class="token comment" spellcheck="true">/* 整体背景颜色，包括导航、移动端的导航、页尾、标签页等的背景颜色. */</span><span class="token selector"><span class="token class">.bg-color</span> </span><span class="token punctuation">{</span>    <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>to right, <span class="token hexcode">#4cbf30</span> <span class="token number">0%</span>, <span class="token hexcode">#0f9d58</span> <span class="token number">100%</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token atrule"><span class="token rule">@-webkit-keyframes</span> rainbow</span> <span class="token punctuation">{</span>   <span class="token comment" spellcheck="true">/* 动态切换背景颜色. */</span><span class="token punctuation">}</span><span class="token atrule"><span class="token rule">@keyframes</span> rainbow</span> <span class="token punctuation">{</span>    <span class="token comment" spellcheck="true">/* 动态切换背景颜色. */</span><span class="token punctuation">}</span></code></pre><h3 id="修改-banner-图和文章特色图"><a href="#修改-banner-图和文章特色图" class="headerlink" title="修改 banner 图和文章特色图"></a>修改 banner 图和文章特色图</h3><p>你可以直接在 <code>/source/medias/banner</code> 文件夹中更换你喜欢的 <code>banner</code> 图片，主题代码中是每天动态切换一张，只需 <code>7</code> 张即可。如果你会 <code>JavaScript</code> 代码，可以修改成你自己喜欢切换逻辑，如：随机切换等，<code>banner</code> 切换的代码位置在 <code>/layout/_partial/bg-cover-content.ejs</code> 文件的 <code>&lt;script&gt;&lt;/script&gt;</code> 代码中：</p><pre class=" language-javascript"><code class="language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.bg-cover'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">'background-image'</span><span class="token punctuation">,</span> <span class="token string">'url(/medias/banner/'</span> <span class="token operator">+</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDay</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'.jpg)'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><p>在 <code>/source/medias/featureimages</code> 文件夹中默认有 24 张特色图片，你可以再增加或者减少，并需要在 <code>_config.yml</code> 做同步修改。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
